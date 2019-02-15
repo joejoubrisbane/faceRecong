@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/faceRecong/static/js/runtime~main.61d3a24a.js"
   },
   {
-    "revision": "44ade22180d051d51ebf",
-    "url": "/faceRecong/static/js/main.44ade221.chunk.js"
+    "revision": "0b38019288a034374033",
+    "url": "/faceRecong/static/js/main.0b380192.chunk.js"
   },
   {
     "revision": "7e1469504d84b0245a6e",
     "url": "/faceRecong/static/js/2.7e146950.chunk.js"
   },
   {
-    "revision": "44ade22180d051d51ebf",
+    "revision": "0b38019288a034374033",
     "url": "/faceRecong/static/css/main.4f0eab1d.chunk.css"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/faceRecong/static/css/2.c82bf1f1.chunk.css"
   },
   {
-    "revision": "4a727c546697562280e176cc4af82d36",
+    "revision": "a3ea36f959455d7adc7c9656133986ba",
     "url": "/faceRecong/index.html"
   }
 ];
