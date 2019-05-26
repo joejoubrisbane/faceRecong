@@ -22,8 +22,12 @@ class DisplayRobot extends Component {
     render() {
 
         const { clients } = this.props;
-        const filteredRobots =_.filter(clients, (robot)=>( robot.name.toLocaleLowerCase()
-            .includes(this.state.searchfield.toLocaleLowerCase())));
+        const clientNames = _.map(clients, (client)=>({
+           name:client.firstName +client.lasttName,
+            ...client
+        }));
+        const filteredRobots =_.filter(clientNames, (robot)=>( _.toLower(robot.name)
+            .includes(_.toLower(this.state.searchfield))));
         return (
             <div>
                 <h1 className='f1'>Robot Friends</h1>
@@ -31,6 +35,7 @@ class DisplayRobot extends Component {
                 <SearchBox searchChange={this.onSearchChange} />
                 <CardList robots={filteredRobots} />
                 </Scroll>
+                <button onClick={()=>{console.log(clientNames)}}></button>
 
             </div>
         );

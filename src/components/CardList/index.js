@@ -6,6 +6,7 @@ const CardList = ({robots}) =>{
     const cardComponent = _.map(robots , (robot) =>(
         <Card
             key={robot.id}
+            robotId={robot.robotId}
             id={robot.id}
             name={robot.name}
             email ={robot.email}

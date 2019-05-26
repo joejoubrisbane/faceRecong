@@ -2,6 +2,7 @@ import _ from "lodash";
 import React, { Component } from "react";
 import { render } from "react-dom";
 import { Link } from 'react-router-dom';
+import robot from './robot.png'
 import {
     Container,
     Icon,
@@ -60,7 +61,7 @@ export const NavBarMobile = ({
         >
             <Menu fixed="top" inverted>
                 <Menu.Item>
-                    <Image size="mini" src="https://react.semantic-ui.com/logo.png" />
+                    <Image size="mini" src={robot} />
                 </Menu.Item>
                 <Menu.Item onClick={onToggle}>
                     <Icon name="sidebar" />

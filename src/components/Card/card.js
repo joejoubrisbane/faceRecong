@@ -1,17 +1,17 @@
 import React from 'react';
 
-const Card = (props) =>{
+const Card = ({robotId , id , name ,email}) =>{
+    if(robotId == undefined){
+        robotId = id
+    }
     return(
-        <div className='db center mw5 tc black link dim'>
-            <img className={'db ba b--black-10'} alt='robots' src={`https://robohash.org/${props.id}?200*200`}/>
-
-            <dl className="mt2 f6 lh-copy">
-                <dt className="clip">Title:</dt>
-                <dd className="ml0">{props.name}</dd>
-                <dt className="clip">Artist</dt>
-                <dd className="ml0 gray">Email:{props.email}</dd>
-            </dl>
+        <div className='bg-light-green dib br3 pa3 ma2 grow tc bw2 shadow-5'>
+            <img alt='robots' src={`https://robohash.org/${robotId}?200*200`}/>
+            <div>
+                <h2>{name}</h2>
+                <p>{email}</p>
+            </div>
         </div>
     )
-}
+};
 export default Card;

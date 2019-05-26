@@ -2,6 +2,7 @@
 import _ from "lodash";
 import React, { Component } from "react";
 import { render } from "react-dom";
+import robot from './robot.png'
 import {Link } from 'react-router-dom';
 import {
     Container,
@@ -17,7 +18,7 @@ import {
 const NavBarDesktop = ({leftItems,rightItems}) => (
     <Menu fixed="top" inverted>
         <Menu.Item>
-            <Image size="mini" src="https://react.semantic-ui.com/logo.png" />
+            <Image size="mini" src={robot} />
         </Menu.Item>
         <Menu.Header>
             <h1 className='f1'>Robot Friends</h1>
