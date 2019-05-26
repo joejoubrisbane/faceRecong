@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import CreateRobot from '../../../containers/CreateRobot';
 import {
     Container,
@@ -10,7 +10,18 @@ import {
     Sidebar,
     Responsive
 } from "semantic-ui-react";
-import {NavBarChildren,NavBarMobile} from './NavBarMoblie'
+import {NavBarMobile} from './NavBarMoblie'
+import {NavBarChildren} from './NavBarChildren'
+import NavBarDesktop from './NavBarDesktop'
+
+const leftItems = [
+    { as: "Link", content: "Home", key: "home",to:'/home' },
+    { as: "Link", content: "createRobot", key: "createRobot",to:'/createRobot' }
+];
+const rightItems = [
+    { as: "Link", content: "Home", key: "home",to:'/home'  },
+    { as: "Link", content: "createRobot", key: "createRobot",to:'/createRobot' }
+];
 
 class NavBar extends Component {
     state = {
@@ -25,32 +36,29 @@ class NavBar extends Component {
 
     handleToggle = () => this.setState({ visible: !this.state.visible });
     render() {
-        const { children, leftItems, rightItems } = this.props;
+        const { children } = this.props;
+        const { visible } = this.state;
         return (
 
             <div>
-            {/*<Responsive {...Responsive.onlyMobile}>*/}
-
-            {/*    <NavBarMobile/>*/}
-            {/*    <NavBarChildren>{children}</NavBarChildren>*/}
-            {/*</Responsive>*/}
-            <header className="bg-white black-80 tc pv4 avenir">
-
-                <h1 className="mt2 mb0 baskerville i fw1 f1">Title</h1>
-                <h2 className="mt2 mb0 f6 fw4 ttu tracked">Your amazing subtitle</h2>
-                <nav className="bt bb tc mw7 center mt4">
-                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l"
-                       to="/">Home</Link>
-                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l"
-                       to="/createRobot" >Create Robot</Link>
-                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l"
-                       to="/shop">Shop</Link>
-                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pa3 ph4-l"
-                       to="/about">About</Link>
-                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l"
-                       to="/contact">Contact</Link>
-                </nav>
-            </header>
+                <Responsive {...Responsive.onlyMobile}>
+                    <NavBarMobile
+                        leftItems={leftItems}
+                        onPusherClick={this.handlePusher}
+                        onToggle={this.handleToggle}
+                        rightItems={rightItems}
+                        visible={visible}
+                    >
+                        <NavBarChildren>{children}</NavBarChildren>
+                    </NavBarMobile>
+                </Responsive>
+                <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+                    <NavBarDesktop
+                        leftItems={leftItems}
+                        rightItems={rightItems}
+                    />
+                    <NavBarChildren>{children}</NavBarChildren>
+                </Responsive>
             </div>
         );
     }

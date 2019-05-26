@@ -3,7 +3,7 @@ import './App.css'
 import store from "../../store";
 import { Provider } from "react-redux";
 import CreateRobot from '../CreateRobot'
-import DisplayRobot from '../DisplayRobot'
+import DisplayRobot from '../DisplayRobot/index'
 import {BrowserRouter as Router , Switch,Route} from "react-router-dom";
 import NavBar from '../../components/layout/NavBar/index'
 class App extends Component {
@@ -25,14 +25,14 @@ class App extends Component {
       <Provider store={store}>
           <Router>
         <div className="tc">
-            <NavBar/>
+            <NavBar>
             <Switch>
-                <Route exact path='/' cpmponent={DisplayRobot} />
-                <Route exact path='/createRobot' cpmponent={DisplayRobot} />
+                <Route exact path='/home' component={DisplayRobot} />
+                <Route exact path='/createRobot' component={CreateRobot} />
 
             </Switch>
 
-
+            </NavBar>
         </div>
           </Router>
       </Provider>

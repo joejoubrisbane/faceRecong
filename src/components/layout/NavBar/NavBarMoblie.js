@@ -1,6 +1,7 @@
 import _ from "lodash";
 import React, { Component } from "react";
 import { render } from "react-dom";
+import { Link } from 'react-router-dom';
 import {
     Container,
     Icon,
@@ -9,12 +10,15 @@ import {
     Sidebar,
     Responsive
 } from "semantic-ui-react";
-const NavBarMobile = ({
+
+
+export const NavBarMobile = ({
                           children,
-                          leftItems,
+                                 leftItems,
+                                 rightItems,
                           onPusherClick,
                           onToggle,
-                          rightItems,
+
                           visible
                       }) => (
     <Sidebar.Pushable>
@@ -23,10 +27,32 @@ const NavBarMobile = ({
             animation="overlay"
             icon="labeled"
             inverted
-            items={leftItems}
+
             vertical
             visible={visible}
-        />
+        >
+
+                <Menu.Item as={Link} to='/home' >
+                    Home
+                </Menu.Item>
+                <Menu.Item>
+                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l"
+                          to="/createRobot" >Create Robot</Link>
+                </Menu.Item>
+                <Menu.Item>
+                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l"
+                          to="/shop">Shop</Link>
+                </Menu.Item>
+                <Menu.Item>
+                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pa3 ph4-l"
+                          to="/about">About</Link>
+                </Menu.Item>
+                <Menu.Item>
+                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l"
+                          to="/contact">Contact</Link>
+                </Menu.Item>
+
+        </Sidebar>
         <Sidebar.Pusher
             dimmed={visible}
             onClick={onPusherClick}
@@ -40,14 +66,12 @@ const NavBarMobile = ({
                     <Icon name="sidebar" />
                 </Menu.Item>
                 <Menu.Menu position="right">
-                    {_.map(rightItems, item => <Menu.Item {...item} />)}
+
                 </Menu.Menu>
             </Menu>
             {children}
         </Sidebar.Pusher>
     </Sidebar.Pushable>
 );
-const NavBarChildren = ({ children }) => (
-    <Container style={{ marginTop: "5em" }}>{children}</Container>
-);
-export {NavBarChildren,NavBarMobile } ;
+
+
