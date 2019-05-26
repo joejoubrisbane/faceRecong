@@ -1,16 +1,15 @@
 {
-  "main.css": "/RobotCard-react/static/css/main.b114b988.chunk.css",
-  "main.js": "/RobotCard-react/static/js/main.0edfb2de.chunk.js",
-  "main.js.map": "/RobotCard-react/static/js/main.0edfb2de.chunk.js.map",
+  "main.css": "/RobotCard-react/static/css/main.33c15e5d.chunk.css",
+  "main.js": "/RobotCard-react/static/js/main.575a606b.chunk.js",
+  "main.js.map": "/RobotCard-react/static/js/main.575a606b.chunk.js.map",
   "runtime~main.js": "/RobotCard-react/static/js/runtime~main.ac5ea379.js",
   "runtime~main.js.map": "/RobotCard-react/static/js/runtime~main.ac5ea379.js.map",
-  "static/css/2.42a7e5c1.chunk.css": "/RobotCard-react/static/css/2.42a7e5c1.chunk.css",
-  "static/js/2.690bc5b3.chunk.js": "/RobotCard-react/static/js/2.690bc5b3.chunk.js",
-  "static/js/2.690bc5b3.chunk.js.map": "/RobotCard-react/static/js/2.690bc5b3.chunk.js.map",
+  "static/css/2.714229b7.chunk.css": "/RobotCard-react/static/css/2.714229b7.chunk.css",
+  "static/js/2.56a33a80.chunk.js": "/RobotCard-react/static/js/2.56a33a80.chunk.js",
+  "static/js/2.56a33a80.chunk.js.map": "/RobotCard-react/static/js/2.56a33a80.chunk.js.map",
   "index.html": "/RobotCard-react/index.html",
-  "precache-manifest.eec9f482d7b85cd2ab1efb740298885e.js": "/RobotCard-react/precache-manifest.eec9f482d7b85cd2ab1efb740298885e.js",
+  "precache-manifest.57b6d3e5231772d9c9dc6b709c17f970.js": "/RobotCard-react/precache-manifest.57b6d3e5231772d9c9dc6b709c17f970.js",
   "service-worker.js": "/RobotCard-react/service-worker.js",
-  "static/css/2.42a7e5c1.chunk.css.map": "/RobotCard-react/static/css/2.42a7e5c1.chunk.css.map",
-  "static/css/main.b114b988.chunk.css.map": "/RobotCard-react/static/css/main.b114b988.chunk.css.map",
-  "static/media/App.css": "/RobotCard-react/static/media/SEGA.12a3db8b.woff"
+  "static/css/2.714229b7.chunk.css.map": "/RobotCard-react/static/css/2.714229b7.chunk.css.map",
+  "static/css/main.33c15e5d.chunk.css.map": "/RobotCard-react/static/css/main.33c15e5d.chunk.css.map"
 }
