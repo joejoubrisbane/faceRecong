@@ -1,16 +1,17 @@
 {
   "main.css": "/RobotCard-react/static/css/main.aab1d580.chunk.css",
-  "main.js": "/RobotCard-react/static/js/main.cb4238b6.chunk.js",
-  "main.js.map": "/RobotCard-react/static/js/main.cb4238b6.chunk.js.map",
+  "main.js": "/RobotCard-react/static/js/main.2051ec02.chunk.js",
+  "main.js.map": "/RobotCard-react/static/js/main.2051ec02.chunk.js.map",
   "runtime~main.js": "/RobotCard-react/static/js/runtime~main.ac5ea379.js",
   "runtime~main.js.map": "/RobotCard-react/static/js/runtime~main.ac5ea379.js.map",
   "static/css/2.714229b7.chunk.css": "/RobotCard-react/static/css/2.714229b7.chunk.css",
-  "static/js/2.6acce846.chunk.js": "/RobotCard-react/static/js/2.6acce846.chunk.js",
-  "static/js/2.6acce846.chunk.js.map": "/RobotCard-react/static/js/2.6acce846.chunk.js.map",
+  "static/js/2.4fe3e554.chunk.js": "/RobotCard-react/static/js/2.4fe3e554.chunk.js",
+  "static/js/2.4fe3e554.chunk.js.map": "/RobotCard-react/static/js/2.4fe3e554.chunk.js.map",
   "index.html": "/RobotCard-react/index.html",
-  "precache-manifest.6f58f4e12fe6540cb36f94a6fb0edec1.js": "/RobotCard-react/precache-manifest.6f58f4e12fe6540cb36f94a6fb0edec1.js",
+  "precache-manifest.63d31c7541513ae34e4a0f5c5da94198.js": "/RobotCard-react/precache-manifest.63d31c7541513ae34e4a0f5c5da94198.js",
   "service-worker.js": "/RobotCard-react/service-worker.js",
   "static/css/2.714229b7.chunk.css.map": "/RobotCard-react/static/css/2.714229b7.chunk.css.map",
   "static/css/main.aab1d580.chunk.css.map": "/RobotCard-react/static/css/main.aab1d580.chunk.css.map",
-  "static/media/App.css": "/RobotCard-react/static/media/SEGA.12a3db8b.woff"
+  "static/media/App.css": "/RobotCard-react/static/media/SEGA.12a3db8b.woff",
+  "static/media/robot.png": "/RobotCard-react/static/media/robot.388b052a.png"
 }
