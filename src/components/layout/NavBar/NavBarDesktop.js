@@ -31,7 +31,7 @@ const NavBarDesktop = ({leftItems,rightItems}) => (
             <Link className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
                   to="/viewRobots" >View Robots</Link>
             <Link className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
-                  to="/login " >Login</Link>
+                  to="/login" >Login</Link>
             <Link className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
                   to="/signUp " >Sign up</Link>
 
