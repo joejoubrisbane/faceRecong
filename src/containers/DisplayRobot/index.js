@@ -35,7 +35,6 @@ class DisplayRobot extends Component {
                 <SearchBox searchChange={this.onSearchChange} />
                 <CardList robots={filteredRobots} />
                 </Scroll>
-                <button onClick={()=>{console.log(clientNames)}}></button>
 
             </div>
         );
