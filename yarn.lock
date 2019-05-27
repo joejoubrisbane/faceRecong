@@ -8068,6 +8068,11 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
+prettier@^1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.1.tgz#ed64b4e93e370cb8a25b9ef7fef3e4fd1c0995db"
+  integrity sha512-TzGRNvuUSmPgwivDqkZ9tM/qTGW9hqDKWOE9YHiyQdixlKbv7kvEqsmDPrcHJTKwthU774TQwZXVtaQ/mMsvjg==
+
 pretty-bytes@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/pretty-bytes/-/pretty-bytes-4.0.2.tgz#b2bf82e7350d65c6c33aa95aaa5a4f6327f61cd9"
@@ -8389,6 +8394,11 @@ react-dev-utils@^7.0.3:
     strip-ansi "5.0.0"
     text-table "0.2.0"
 
+react-dice@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-dice/-/react-dice-1.0.1.tgz#f57aa457bcf11ee5a14c5bea1cdacd17839a278e"
+  integrity sha1-9XqkV7zxHuWhTFvqHNrNF4OaJ44=
+
 react-dom@^16.8.1:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
@@ -8540,6 +8550,11 @@ react-scripts@2.1.5:
     workbox-webpack-plugin "3.6.3"
   optionalDependencies:
     fsevents "1.2.4"
+
+react-semantic-ui-range@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/react-semantic-ui-range/-/react-semantic-ui-range-0.7.0.tgz#54054eaddfe6e45b21863ef02f62022338db66fb"
+  integrity sha512-1Y0GakHM+9gvEpPDbzRFvwHsmPtTRH0lLEAx2Ho2rhH9q7S+goTjgHlEUXlvXS/WbBtwVDqfpzXSj+JO8p0nmQ==
 
 react@^16.8.1:
   version "16.8.6"

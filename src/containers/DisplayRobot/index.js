@@ -16,14 +16,17 @@ class DisplayRobot extends Component {
             searchfield: ""
         };
     }
+    onDeleteRobot =() =>{
+
+    }
     onSearchChange = event => {
         this.setState({ searchfield: event.target.value });
     };
     render() {
 
-        const { clients } = this.props;
+        const { clients,firestore,history } = this.props;
         const clientNames = _.map(clients, (client)=>({
-           name:client.firstName +client.lasttName,
+           name:client.firstName +client.lastName,
             ...client
         }));
         const filteredRobots =_.filter(clientNames, (robot)=>( _.toLower(robot.name)
@@ -31,22 +34,23 @@ class DisplayRobot extends Component {
         return (
             <div>
                 <h1 className='f1'>Robot Friends</h1>
-                <Scroll>
                 <SearchBox searchChange={this.onSearchChange} />
-                <CardList robots={filteredRobots} />
-                </Scroll>
-                <button onClick={()=>{console.log(clientNames)}}></button>
+                <Scroll>
 
+                <CardList history={history} firestore={firestore} robots={filteredRobots} />
+                </Scroll>
             </div>
         );
     }
 }
 
-DisplayRobot.propTypes = {};
+DisplayRobot.propTypes = {
+    clients:PropTypes.array,
+};
 
 export default compose(
     firestoreConnect([{ collection: "clients" }]),
     connect((state, props) => ({
-        clients: state.firestore.ordered.clients
+        clients: state.firestore.ordered.clients,
     }))
 )(DisplayRobot);

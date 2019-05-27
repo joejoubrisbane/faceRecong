@@ -3,14 +3,13 @@ import PropTypes from "prop-types";
 import { Responsive, Segment ,Card, Placeholder } from "semantic-ui-react";
 import { Form, Field, } from "react-final-form";
 import {firestoreConnect} from "react-redux-firebase";
-
+import { Slider } from 'react-semantic-ui-range'
 class CreateRobot extends Component {
 
     onSubmit = values => {
         const newRobot = values;
-        const { firestore } =this.props;
-        firestore.add({collection:'clients'},newRobot);
-        window.alert(JSON.stringify(values, 0, 2));
+        const { firestore,history } =this.props;
+        firestore.add({collection:'clients'},newRobot).then(history.push('/viewRobots'));
     };
   render() {
     return (
@@ -19,7 +18,7 @@ class CreateRobot extends Component {
 
           <Form
             onSubmit={this.onSubmit}
-            initialValues={{ stooge: "larry", employed: false }}
+            initialValues={{}}
             render={({ handleSubmit, form, submitting, pristine, values }) => (
               <form className="ui form" onSubmit={handleSubmit}>
                 <div className="fields">
@@ -29,17 +28,39 @@ class CreateRobot extends Component {
                                 <label>Robot image</label>
                             </Card.Header>
                             <Card.Content>
-                                <Placeholder fluid>
+
                                     {
-                                        values.robotId ==undefined ? <Placeholder.Image rectangular />:<img alt='robots' src={`https://robohash.org/${values.robotId}?200*200`}/>
+                                        values.robotId ==undefined ?<Placeholder fluid> <Placeholder.Image rectangular /> </Placeholder>:<img alt='robots' src={`https://robohash.org/${values.robotId}?200*200`}/>
                                     }
 
 
-                                </Placeholder>
+
                             </Card.Content>
                         </Card>
                     </div>
                   <div className=" ten wide field">
+                      <label>Angriness</label>
+
+                      <Field name="robotId" >
+                          {({ input, meta }) =>(
+
+                                  <Slider
+                                          {...input}
+
+                                          color="red"
+                                          settings={{
+                                              start: 2,
+                                              min: 0,
+                                              max: 100,
+                                              step: 1,
+                                              onChange:value =>{ input.onChange(value)}
+                                          }}
+                                  />
+
+
+                          ) }
+                      </Field>
+
                     <label>First Name</label>
                     <Field
                       name="firstName"
@@ -55,13 +76,7 @@ class CreateRobot extends Component {
                       type="text"
                       placeholder="Last Name"
                     />
-                      <label>Robot Image</label>
-                      <Field name="robotId" >
-                          {({ input, meta }) =>(
-                              <input type='button' {...input} placeholder="Any number" onClick={()=>{input.value=1}} />
 
-                          ) }
-                      </Field>
                       <label>Email</label>
                       <Field
                           name="email"
@@ -82,12 +97,12 @@ class CreateRobot extends Component {
                     placeholder="Notes"
                   />
                 </div>
-                <div className="buttons">
-                  <button type="submit" disabled={submitting || pristine}>
+                <div >
+                  <button className='ui primary basic button ' type="submit" disabled={submitting || pristine}>
                     Submit
                   </button>
                   <button
-                    type="button"
+                      className='ui secondary basic button'
                     onClick={form.reset}
                     disabled={submitting || pristine}
                   >
@@ -104,6 +119,8 @@ class CreateRobot extends Component {
   }
 }
 
-CreateRobot.propTypes = {};
+CreateRobot.propTypes = {
+    firestore:PropTypes.object.isRequired,
+};
 
 export default firestoreConnect()(CreateRobot) ;

@@ -9,8 +9,10 @@ import {
     Image,
     Menu,
     Sidebar,
+    Sticky,
     Responsive
 } from "semantic-ui-react";
+import './NavBar.css'
 
 
 export const NavBarMobile = ({
@@ -19,60 +21,71 @@ export const NavBarMobile = ({
                                  rightItems,
                           onPusherClick,
                           onToggle,
-
                           visible
                       }) => (
+
     <Sidebar.Pushable>
         <Sidebar
             as={Menu}
             animation="overlay"
             icon="labeled"
             inverted
-
+            direction='right'
             vertical
             visible={visible}
         >
 
-                <Menu.Item as={Link} to='/home' >
+                <Menu.Item  onClick={onToggle} as={Link} to='/' >
                     Home
                 </Menu.Item>
-                <Menu.Item>
-                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l"
-                          to="/createRobot" >Create Robot</Link>
+                <Menu.Item
+                    onClick={onToggle}
+                    to="/createRobot"
+                    as={Link} >
+                    Create Robot
                 </Menu.Item>
-                <Menu.Item>
-                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l"
-                          to="/shop">Shop</Link>
+                <Menu.Item
+                    onClick={onToggle }
+                    as={Link}
+                    to="/viewRobots"
+                >
+                    View Robots
                 </Menu.Item>
-                <Menu.Item>
-                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pa3 ph4-l"
-                          to="/about">About</Link>
+                <Menu.Item
+
+                    onClick={onToggle}
+                    to="/login"
+                    as={Link}>
+                    Login
                 </Menu.Item>
-                <Menu.Item>
-                    <Link className="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l"
-                          to="/contact">Contact</Link>
+                <Menu.Item
+
+                    onClick={onToggle}
+                    to="/signUp"
+                    as={Link}>
+                    Sign up
                 </Menu.Item>
 
         </Sidebar>
         <Sidebar.Pusher
             dimmed={visible}
             onClick={onPusherClick}
+            fixed="top"
             style={{ minHeight: "100vh" }}
         >
-            <Menu fixed="top" inverted>
+            <Menu fixed="top" inverted >
                 <Menu.Item>
                     <Image size="mini" src={robot} />
-                </Menu.Item>
-                <Menu.Item onClick={onToggle}>
+                </Menu.Item >
+                <Menu.Item position="right" onClick={onToggle}>
                     <Icon name="sidebar" />
                 </Menu.Item>
-                <Menu.Menu position="right">
 
-                </Menu.Menu>
             </Menu>
             {children}
         </Sidebar.Pusher>
     </Sidebar.Pushable>
+
 );
 
 

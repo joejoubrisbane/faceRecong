@@ -24,12 +24,12 @@ const NavBarDesktop = ({leftItems,rightItems}) => (
             <h1 className='f1'>Robot Friends</h1>
         </Menu.Header>
         <Menu.Menu position="right">
-            <Link className="f12 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
+            <Link className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
                   to="/home" >Home</Link>
             <Link className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
                   to="/createRobot" >Create Robot</Link>
             <Link className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
-                  to="/viewRobot" >View Robot</Link>
+                  to="/viewRobots" >View Robots</Link>
             <Link className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
                   to="/login " >Login</Link>
             <Link className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
