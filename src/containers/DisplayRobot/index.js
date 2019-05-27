@@ -7,7 +7,9 @@ import {firestoreConnect} from "react-redux-firebase";
 import {connect} from "react-redux";
 import _ from 'lodash';
 import Scroll from '../../components/Scroll';
-
+import {
+    Loader
+} from "semantic-ui-react";
 class DisplayRobot extends Component {
     constructor(props) {
         super(props);
@@ -31,16 +33,21 @@ class DisplayRobot extends Component {
         }));
         const filteredRobots =_.filter(clientNames, (robot)=>( _.toLower(robot.name)
             .includes(_.toLower(this.state.searchfield))));
-        return (
-            <div>
-                <h1 className='f1'>Robot Friends</h1>
-                <SearchBox searchChange={this.onSearchChange} />
-                <Scroll>
+        if(clients){
+            return (
+                <div>
+                    <h1 className='f1'>Robot Friends</h1>
+                    <SearchBox searchChange={this.onSearchChange} />
+                    <Scroll>
 
-                <CardList history={history} firestore={firestore} robots={filteredRobots} />
-                </Scroll>
-            </div>
-        );
+                        <CardList history={history} firestore={firestore} robots={filteredRobots} />
+                    </Scroll>
+                </div>
+            )
+        }else {
+            return( <Loader active  size='large'> <h3 >Making robots</h3></Loader>)
+        }
+
     }
 }
 

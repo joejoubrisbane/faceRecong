@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import CardList from "../../components/CardList";
-import SearchBox from "../../components/SearchBox";
 import {compose} from "redux";
 import {firestoreConnect} from "react-redux-firebase";
 import {connect} from "react-redux";
-import _ from 'lodash';
-import Scroll from '../../components/Scroll';
+
 import {Card, Placeholder, Responsive, Segment} from "semantic-ui-react";
 import {Field, Form} from "react-final-form";
 import {Slider} from "react-semantic-ui-range";
