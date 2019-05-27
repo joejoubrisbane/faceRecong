@@ -41,6 +41,7 @@ class NavBar extends Component {
         return (
 
             <div>
+
                 <Responsive {...Responsive.onlyMobile}>
                     <NavBarMobile
                         leftItems={leftItems}
@@ -59,6 +60,7 @@ class NavBar extends Component {
                     />
                     <NavBarChildren>{children}</NavBarChildren>
                 </Responsive>
+
             </div>
         );
     }

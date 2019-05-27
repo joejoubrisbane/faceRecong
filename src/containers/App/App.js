@@ -6,6 +6,9 @@ import CreateRobot from '../CreateRobot'
 import DisplayRobot from '../DisplayRobot/index'
 import {BrowserRouter as Router , Switch,Route} from "react-router-dom";
 import NavBar from '../../components/layout/NavBar/index'
+import Landing from '../Landing'
+import editRobot from '../editRobot'
+import Login from '../../components/auth/Login/Login'
 class App extends Component {
   constructor(props) {
     super(props);
@@ -27,8 +30,12 @@ class App extends Component {
         <div className="tc">
             <NavBar>
             <Switch>
-                <Route exact path='/home' component={DisplayRobot} />
+                <Route exact path='/' component={Landing} />
                 <Route exact path='/createRobot' component={CreateRobot} />
+                <Route exact path='/viewRobots' component={DisplayRobot} />
+                <Route exact path='/robot/edit/:id' component={editRobot} />
+                <Route exact path='/login' component={Login} />
+                <Route exact path='/signUp' component={CreateRobot} />
 
             </Switch>
 

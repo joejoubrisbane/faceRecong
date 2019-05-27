@@ -2,14 +2,13 @@ import React from 'react';
 import Card from '../Card/card';
 import _ from 'lodash'
 
-const CardList = ({robots}) =>{
+const CardList = ({robots,firestore,history}) =>{
     const cardComponent = _.map(robots , (robot) =>(
         <Card
+            history={history}
+            firestore={firestore}
             key={robot.id}
-            robotId={robot.robotId}
-            id={robot.id}
-            name={robot.name}
-            email ={robot.email}
+            {...robot}
         />
     ) );
 

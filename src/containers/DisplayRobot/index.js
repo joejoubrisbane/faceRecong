@@ -7,7 +7,9 @@ import {firestoreConnect} from "react-redux-firebase";
 import {connect} from "react-redux";
 import _ from 'lodash';
 import Scroll from '../../components/Scroll';
-
+import {
+    Loader
+} from "semantic-ui-react";
 class DisplayRobot extends Component {
     constructor(props) {
         super(props);
@@ -16,36 +18,46 @@ class DisplayRobot extends Component {
             searchfield: ""
         };
     }
+    onDeleteRobot =() =>{
+
+    }
     onSearchChange = event => {
         this.setState({ searchfield: event.target.value });
     };
     render() {
 
-        const { clients } = this.props;
+        const { clients,firestore,history } = this.props;
         const clientNames = _.map(clients, (client)=>({
-           name:client.firstName +client.lasttName,
+           name:client.firstName +client.lastName,
             ...client
         }));
         const filteredRobots =_.filter(clientNames, (robot)=>( _.toLower(robot.name)
             .includes(_.toLower(this.state.searchfield))));
-        return (
-            <div>
-                <h1 className='f1'>Robot Friends</h1>
-                <Scroll>
-                <SearchBox searchChange={this.onSearchChange} />
-                <CardList robots={filteredRobots} />
-                </Scroll>
+        if(clients){
+            return (
+                <div>
+                    <h1 className='f1'>Robot Friends</h1>
+                    <SearchBox searchChange={this.onSearchChange} />
+                    <Scroll>
 
-            </div>
-        );
+                        <CardList history={history} firestore={firestore} robots={filteredRobots} />
+                    </Scroll>
+                </div>
+            )
+        }else {
+            return( <Loader active  size='large'> <h3 >Making robots</h3></Loader>)
+        }
+
     }
 }
 
-DisplayRobot.propTypes = {};
+DisplayRobot.propTypes = {
+    clients:PropTypes.array,
+};
 
 export default compose(
     firestoreConnect([{ collection: "clients" }]),
     connect((state, props) => ({
-        clients: state.firestore.ordered.clients
+        clients: state.firestore.ordered.clients,
     }))
 )(DisplayRobot);
