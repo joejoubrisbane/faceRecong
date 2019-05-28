@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import CreateRobot from '../../../containers/CreateRobot';
+import {compose} from "redux";
+import {firestoreConnect} from "react-redux-firebase";
+import { withRouter } from 'react-router-dom'
+import { firebaseConnect } from 'react-redux-firebase'
+import {connect} from "react-redux";
 import {
     Container,
     Icon,
@@ -14,40 +19,48 @@ import {NavBarMobile} from './NavBarMoblie'
 import {NavBarChildren} from './NavBarChildren'
 import NavBarDesktop from './NavBarDesktop'
 
-const leftItems = [
-    { as: "Link", content: "Home", key: "home",to:'/home' },
-    { as: "Link", content: "createRobot", key: "createRobot",to:'/createRobot' }
-];
-const rightItems = [
-    { as: "Link", content: "Home", key: "home",to:'/home'  },
-    { as: "Link", content: "createRobot", key: "createRobot",to:'/createRobot' }
-];
+
 
 class NavBar extends Component {
     state = {
-        visible: false
+        visible: false,
+        isAuthenticated:false,
     };
 
+static getDerivedStateFromProps(props,state){
+
+    const { auth } = props;
+    if(auth.uid){
+        return { isAuthenticated:true}
+    }else {
+        return { isAuthenticated:false}
+    }
+}
     handlePusher = () => {
         const { visible } = this.state;
 
         if (visible) this.setState({ visible: false });
     };
+onLogoutClick = () => {
+    const { firebase } = this.props;
+    firebase.logout();
+};
 
     handleToggle = () => this.setState({ visible: !this.state.visible });
     render() {
         const { children } = this.props;
-        const { visible } = this.state;
+        const { visible,isAuthenticated } = this.state;
         return (
 
             <div>
 
                 <Responsive {...Responsive.onlyMobile}>
                     <NavBarMobile
-                        leftItems={leftItems}
+
                         onPusherClick={this.handlePusher}
                         onToggle={this.handleToggle}
-                        rightItems={rightItems}
+                        isLogin={isAuthenticated}
+                        onLogoutClick={this.onLogoutClick}
                         visible={visible}
                     >
                         <NavBarChildren>{children}</NavBarChildren>
@@ -55,8 +68,8 @@ class NavBar extends Component {
                 </Responsive>
                 <Responsive minWidth={Responsive.onlyTablet.minWidth}>
                     <NavBarDesktop
-                        leftItems={leftItems}
-                        rightItems={rightItems}
+                        isLogin={isAuthenticated}
+                        onLogoutClick={this.onLogoutClick}
                     />
                     <NavBarChildren>{children}</NavBarChildren>
                 </Responsive>
@@ -66,6 +79,13 @@ class NavBar extends Component {
     }
 }
 
-NavBar.propTypes = {};
-
-export default NavBar;
+// NavBar.propTypes = {
+//     firebase:PropTypes.object.isRequired,
+//     auth:PropTypes.object.isRequired,
+// };
+//
+export default withRouter(compose(
+    firebaseConnect(),
+    connect((state,props) => ({
+        auth:state.firebase.auth,
+    })))(NavBar));

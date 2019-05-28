@@ -8655,7 +8655,7 @@ recursive-readdir@2.2.2:
   dependencies:
     minimatch "3.0.4"
 
-redux-auth-wrapper@^2.0.3:
+redux-auth-wrapper@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/redux-auth-wrapper/-/redux-auth-wrapper-2.1.0.tgz#1f9d464abd6379c464328cece71692d104b58314"
   integrity sha512-UtU64cJk2pWcMMfgWIVoyBVG0p8ZiGJ++vqrvQ5r5ghZZOLRq+M5aTS0RRNneiB+aCCZBzI+txFSaKYVRrv8qQ==

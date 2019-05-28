@@ -16,7 +16,7 @@ class editRobot extends Component {
     onSubmit = values => {
         const updatedRobot = values;
         const { firestore, client, history } =this.props;
-        firestore.update({collection:'clients',doc:client.id},updatedRobot).then(history.push('/'));
+        firestore.update({collection:'clients',doc:client.id},updatedRobot).then(history.push('/viewRobots'));
     };
 
     render() {

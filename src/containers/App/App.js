@@ -9,6 +9,7 @@ import NavBar from '../../components/layout/NavBar/index'
 import Landing from '../Landing'
 import editRobot from '../editRobot'
 import Login from '../../components/auth/Login/Login'
+import { UserIsAuthenticated ,UserIsNotAuthenticated } from '../../helpers/auth'
 class App extends Component {
   constructor(props) {
     super(props);
@@ -30,12 +31,12 @@ class App extends Component {
         <div className="tc">
             <NavBar>
             <Switch>
-                <Route exact path='/' component={Landing} />
-                <Route exact path='/createRobot' component={CreateRobot} />
-                <Route exact path='/viewRobots' component={DisplayRobot} />
-                <Route exact path='/robot/edit/:id' component={editRobot} />
-                <Route exact path='/login' component={Login} />
-                <Route exact path='/signUp' component={CreateRobot} />
+                <Route exact path='/home' component={Landing} />
+                <Route exact path='/createRobot' component={UserIsAuthenticated(CreateRobot)} />
+                <Route exact path='/viewRobots' component={UserIsAuthenticated(DisplayRobot)} />
+                <Route exact path='/robot/edit/:id' component={UserIsAuthenticated(editRobot)} />
+                <Route exact path='/login' component={UserIsNotAuthenticated(Login)} />
+                <Route exact path='/signUp' component={DisplayRobot} />
 
             </Switch>
 
