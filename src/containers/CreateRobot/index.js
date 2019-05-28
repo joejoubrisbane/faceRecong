@@ -9,7 +9,9 @@ class CreateRobot extends Component {
     onSubmit = values => {
         const newRobot = values;
         const { firestore,history } =this.props;
-        firestore.add({collection:'clients'},newRobot).then(history.push('/viewRobots'));
+        firestore.add({collection:'clients'},newRobot)
+            .then(history.push('/viewRobots'))
+            .catch(err=>console.log(err));
     };
   render() {
     return (
