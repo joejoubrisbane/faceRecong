@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "/RobotCard-react/static/js/runtime~main.ac5ea379.js"
   },
   {
-    "revision": "d52c4ea9f0d52f5ff86b",
-    "url": "/RobotCard-react/static/js/main.d52c4ea9.chunk.js"
+    "revision": "ea2a1a03e9fe61fd7d97",
+    "url": "/RobotCard-react/static/js/main.ea2a1a03.chunk.js"
   },
   {
     "revision": "936768d294974a46ad65",
     "url": "/RobotCard-react/static/js/2.936768d2.chunk.js"
   },
   {
-    "revision": "d52c4ea9f0d52f5ff86b",
+    "revision": "ea2a1a03e9fe61fd7d97",
     "url": "/RobotCard-react/static/css/main.943c1ef0.chunk.css"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/RobotCard-react/static/css/2.714229b7.chunk.css"
   },
   {
-    "revision": "b5b27738a11f9edb5e957e90f47b3802",
+    "revision": "0efc625fa304fddd9321e464b67e8245",
     "url": "/RobotCard-react/index.html"
   }
 ];
