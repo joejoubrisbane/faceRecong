@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/RobotCard-react/static/css/2.714229b7.chunk.css"
   },
   {
-    "revision": "89f8fff31c953bcf78be5fb91dd26024",
+    "revision": "b5b27738a11f9edb5e957e90f47b3802",
     "url": "/RobotCard-react/index.html"
   }
 ];
