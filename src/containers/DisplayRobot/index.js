@@ -18,9 +18,7 @@ class DisplayRobot extends Component {
             searchfield: ""
         };
     }
-    onDeleteRobot =() =>{
 
-    }
     onSearchChange = event => {
         this.setState({ searchfield: event.target.value });
     };
