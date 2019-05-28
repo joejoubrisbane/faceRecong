@@ -1,7 +1,7 @@
 import _ from "lodash";
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 import robot from './robot.png'
 import {
     Container,
@@ -17,11 +17,11 @@ import './NavBar.css'
 
 export const NavBarMobile = ({
                           children,
-                                 leftItems,
-                                 rightItems,
+                                 isLogin,
                           onPusherClick,
                           onToggle,
-                          visible
+                          visible,
+                                 onLogoutClick
                       }) => (
 
     <Sidebar.Pushable>
@@ -35,34 +35,45 @@ export const NavBarMobile = ({
             visible={visible}
         >
 
-                <Menu.Item  onClick={onToggle} as={Link} to='/' >
+                <Menu.Item  onClick={onToggle} as={NavLink} to='/home' >
                     Home
                 </Menu.Item>
                 <Menu.Item
                     onClick={onToggle}
                     to="/createRobot"
-                    as={Link} >
+                    as={NavLink} >
                     Create Robot
                 </Menu.Item>
                 <Menu.Item
                     onClick={onToggle }
-                    as={Link}
+                    as={NavLink}
                     to="/viewRobots"
                 >
                     View Robots
                 </Menu.Item>
-                <Menu.Item
-
+            {
+                isLogin ?  <Menu.Item
+                    onClick={ () => {
+                        onLogoutClick();
+                        onToggle();
+                    }}
+                    to="/home"
+                    as={NavLink}>
+                    Log out
+                </Menu.Item>   :
+                    <Menu.Item
                     onClick={onToggle}
                     to="/login"
-                    as={Link}>
+                    as={NavLink}>
                     Login
                 </Menu.Item>
+            }
+
                 <Menu.Item
 
                     onClick={onToggle}
                     to="/signUp"
-                    as={Link}>
+                    as={NavLink}>
                     Sign up
                 </Menu.Item>
 

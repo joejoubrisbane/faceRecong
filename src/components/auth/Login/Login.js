@@ -13,7 +13,7 @@ class Login extends Component {
     onSubmit = ({email,password}) => {
 
         const { firebase,history } =this.props;
-        firebase.login({email,password}).catch(err=>alert('Invalid Login'))
+        firebase.login({email,password}).then(history.push('/viewRobots'))
     };
     render() {
         return (
@@ -33,25 +33,24 @@ class Login extends Component {
                                         <Field
                                             name="email"
                                             component="input"
-                                            type="text"
-                                            placeholder="Last Name"
+                                            type="email"
+                                            placeholder="Email"
                                         />
                                     </div>
 
                                 <div className="field">
                                     <label>Passwords</label>
                                     <Field
+                                        type='password'
                                         name="password"
                                         placeholder="Password"
                                     >
-                                        {(input,meta)=>(
+                                        {({input,meta})=>(
                                             <input type='password' {...input}/>
                                             )
                                         }
                                     </Field>
                                 </div>
-
-
 
                                 <button className='ui primary basic button ' type="submit" disabled={submitting || pristine}>
                                     Login
