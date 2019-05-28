@@ -3,7 +3,7 @@ import firebase from 'firebase';
 import 'firebase/firestore';
 import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase';
 import { reduxFirestore, firestoreReducer } from 'redux-firestore';
-
+import notifyReducer from './reducers/notifyReducer.js'
 
 
 const firebaseConfig = {
@@ -37,7 +37,7 @@ const createStoreWithFirebase = compose(
 const rootReducer = combineReducers({
     firebase: firebaseReducer,
     firestore: firestoreReducer,
-    // notify: notifyReducer,
+    notify: notifyReducer,
     // settings: settingsReducer
 });
 

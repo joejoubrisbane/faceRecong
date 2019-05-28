@@ -85,8 +85,13 @@ export const NavBarMobile = ({
             style={{ minHeight: "100vh" }}
         >
             <Menu fixed="top" inverted >
+
+
                 <Menu.Item>
                     <Image size="mini" src={robot} />
+                </Menu.Item >
+                <Menu.Item>
+                    <h4 >Robot Friends</h4>
                 </Menu.Item >
                 <Menu.Item position="right" onClick={onToggle}>
                     <Icon name="sidebar" />

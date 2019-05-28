@@ -1,21 +1,27 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {compose} from "redux";
+import classNames from 'classnames'
 import {firestoreConnect} from "react-redux-firebase";
 import {connect} from "react-redux";
 import { Form, Field, } from "react-final-form";
 import { firebaseConnect } from 'react-redux-firebase'
 import {Button, Card, Grid, Header, Image, Message, Placeholder, Responsive, Segment} from 'semantic-ui-react'
 import {Slider} from "react-semantic-ui-range";
+import { notifyUser} from "../../../actions/notifyAction";
+import Alert from '../../layout/Alert'
 class Login extends Component {
 
 
     onSubmit = ({email,password}) => {
 
-        const { firebase,history } =this.props;
-        firebase.login({email,password}).then(history.push('/viewRobots'))
+        const { firebase,history,notifyUser} =this.props;
+        firebase.login({email,password})
+            .then(history.push('/viewRobots'))
+            .catch(err => notifyUser('Invalid Login Credentials','error'))
     };
     render() {
+        const { message ,messageType } = this.props.notify;
         return (
             <Responsive>
                 <Segment>
@@ -25,7 +31,11 @@ class Login extends Component {
 
                         }}
                         render={({ handleSubmit, form, submitting, pristine, values }) => (
-                            <form className="ui form" onSubmit={handleSubmit}>
+                            <form className={classNames("ui form",{
+                                red: messageType === 'error',
+                                ribbon: messageType === 'error',
+                                label:messageType === 'error',
+                            })} onSubmit={handleSubmit}>
 
 
                                     <div className="  field">
@@ -51,7 +61,7 @@ class Login extends Component {
                                         }
                                     </Field>
                                 </div>
-
+                                { message && <Alert message={message} messageType={messageType}/>}
                                 <button className='ui primary basic button ' type="submit" disabled={submitting || pristine}>
                                     Login
                                 </button>
@@ -69,4 +79,8 @@ Login.propTypes = {
     firebase:PropTypes.object.isRequired,
 };
 
-export default firebaseConnect()(Login);
+export default compose(firebaseConnect(),
+    connect((state,props)=>({
+       notify:state.notify,
+    }),{notifyUser})
+    )(Login);

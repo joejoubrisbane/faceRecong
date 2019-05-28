@@ -22,7 +22,7 @@ const NavBarDesktop = ({onLogoutClick,isLogin}) => (
             <Image size="mini" src={robot} />
         </Menu.Item>
         <Menu.Header>
-            <h1 className='f1'>Robot Friends</h1>
+            <h5 className='f1'>Robot Friends</h5>
         </Menu.Header>
         <Menu.Menu position="right">
             <NavLink className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l "
