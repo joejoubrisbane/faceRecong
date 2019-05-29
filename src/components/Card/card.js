@@ -17,7 +17,7 @@ const Card = ({robotId , id , name ,email, notes, firestore,history}) =>{
             closeIcon
             trigger={
             <div className='bg-light-green dib br3 pa3 ma2 grow tc bw2 shadow-5'>
-                 <img alt='robots' src={`https://robohash.org/${robotId}?bgset=bg1`}/>
+                 <img alt='robots' src={`https://robohash.org/${robotId}?bgset=bg1&set=set3&size=100x100`}/>
                    <div>
                        <h2>{name}</h2>
                         <p>{email}</p>
