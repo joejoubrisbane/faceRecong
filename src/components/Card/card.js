@@ -1,7 +1,12 @@
 import React,{useState} from 'react';
 import { Button, Header, Image, Modal } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
-const Card = ({robotId , id , name ,email, notes, firestore,history}) =>{
+import { connect } from "react-redux";
+import { compose } from "redux";
+import classNames from 'classnames'
+import './index.module.css'
+import {firestoreConnect} from "react-redux-firebase";
+const Card = ({robotId , id , name ,email, notes, firestore,history,setting }) =>{
 
     if(robotId == undefined){
         robotId = id
@@ -11,13 +16,14 @@ const Card = ({robotId , id , name ,email, notes, firestore,history}) =>{
             .catch(err=>console.log(err));
 
     };
+
     return(
 
         <Modal
             closeIcon
             trigger={
             <div className='bg-light-green dib br3 pa3 ma2 grow tc bw2 shadow-5'>
-                 <img alt='robots' src={`https://robohash.org/${robotId}?bgset=bg1&set=set3&size=100x100`}/>
+                 <img alt='robots' src={`https://robohash.org/${robotId}?bgset=bg1&size=100x100`}/>
                    <div>
                        <h2>{name}</h2>
                         <p>{email}</p>
@@ -32,11 +38,17 @@ const Card = ({robotId , id , name ,email, notes, firestore,history}) =>{
             <p>We've found the following gravatar image associated with your e-mail address.</p>
             <p>Is it okay to use this photo?</p>
             <p>{notes}</p>
-            <Link className='ui button basic primary' to={`/robot/edit/${id}`}> Edit Robot</Link>
-            <Button onClick={deleteRobot} negative> Delete</Button>
+            <Link className={classNames('ui button  primary',{
+                
+                disabled:setting.disableRobotsOnEdit,
+            })}  to={`/robot/edit/${id}`}> Edit Robot</Link>
+            <Button onClick={deleteRobot} negative disabled={setting.disableRobotsOnEdit}> Delete</Button>
         </Modal.Description>
     </Modal.Content>
     </Modal>
+
     )
 };
-export default Card;
+export default compose(firestoreConnect(),connect((state,props)=>({
+    setting:state.setting,
+})))(Card);

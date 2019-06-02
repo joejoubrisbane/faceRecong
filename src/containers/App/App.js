@@ -9,6 +9,8 @@ import NavBar from "../../components/layout/NavBar/index";
 import Landing from "../Landing";
 import editRobot from "../editRobot";
 import Login from "../../components/auth/Login/Login";
+import Setting from "../../components/setting/Setting";
+import SignUp from "../../components/auth/SignUp/SignUp";
 import {
   UserIsAuthenticated,
   UserIsNotAuthenticated
@@ -31,7 +33,7 @@ class App extends Component {
                 <Route
                   exact
                   path="/home"
-                  component={UserIsNotAuthenticated(Login)}
+                  component={Landing}
                 />
                 <Route
                   exact
@@ -53,7 +55,12 @@ class App extends Component {
                   path="/login"
                   component={UserIsNotAuthenticated(Login)}
                 />
-                <Route exact path="/signUp" component={DisplayRobot} />
+                <Route exact path="/signUp" component={SignUp} />
+                <Route
+                    exact
+                    path="/setting"
+                    component={Setting}
+                />
               </Switch>
             </NavBar>
           </div>
