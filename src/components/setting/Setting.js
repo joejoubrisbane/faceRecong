@@ -24,10 +24,7 @@ import classNames from "classnames";
 import Alert from "../layout/Alert";
 
 class Setting extends Component {
-  // onSetAllowRegistration=()=>{
-  //     const {setAllowRegistration} =this.props;
-  //     setAllowRegistration();
-  // }
+
   render() {
     const {
       disableRobotsOnAdd,
