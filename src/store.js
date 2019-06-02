@@ -36,7 +36,8 @@ firebase.firestore(); // <- needed if using firestore
 // firebase.functions() // <- needed if using httpsCallable
 
 // Add reactReduxFirebase enhancer when making store creator
-const createStoreWithFirebase = compose(
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const createStoreWithFirebase = composeEnhancers(
   reactReduxFirebase(firebase, rrfConfig), // firebase instance as first argument
   reduxFirestore(firebase) // <- needed if using firestore
 )(createStore);
@@ -62,10 +63,7 @@ const initialState = {setting:JSON.parse(localStorage.getItem('setting'))};
 const store = createStoreWithFirebase(
   rootReducer,
   initialState,
-  compose(
-    reactReduxFirebase(firebase),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
+
 );
 
 export default store;

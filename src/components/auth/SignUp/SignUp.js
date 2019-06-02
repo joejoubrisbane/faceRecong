@@ -102,7 +102,7 @@ class SignUp extends Component {
 }
 
 SignUp.propTypes = {
-  firestore: PropTypes.object.isRequired,
+
   notify: PropTypes.object.isRequired
 };
 export default compose(
