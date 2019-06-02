@@ -69,7 +69,7 @@ const NavBarDesktop = ({ onLogoutClick, isLogin }) => (
 
       <NavLink
         className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l "
-        to="/signUp "
+        to="/signUp"
       >
         Sign up
       </NavLink>

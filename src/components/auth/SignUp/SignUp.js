@@ -4,15 +4,22 @@ import { Responsive, Segment, Card, Placeholder } from "semantic-ui-react";
 import { Form, Field } from "react-final-form";
 import { firestoreConnect } from "react-redux-firebase";
 import { Slider } from "react-semantic-ui-range";
+import { firebaseConnect } from "react-redux-firebase";
 import { connect } from "react-redux";
 import { compose } from "redux";
+import { notifyUser } from "../../../actions/notifyAction";
+import Alert from "../../layout/Alert";
 
 class SignUp extends Component {
   onSubmit = values => {
-    const newRobot = values;
-    const { firestore, history } = this.props;
+    const { email, password } = values;
+    const { firebase, history, notifyUser } = this.props;
+    firebase
+      .createUser({ email, password })
+      .catch(err => notifyUser("That email already exits", "error"));
   };
   render() {
+      const { message, messageType } = this.props.notify;
     return (
       <Responsive>
         <Segment>
@@ -27,7 +34,6 @@ class SignUp extends Component {
                       <Card.Header>
                         <label>Register</label>
                       </Card.Header>
-
                     </Card>
                   </div>
                   <div className=" ten wide field">
@@ -51,8 +57,8 @@ class SignUp extends Component {
                     <Field
                       name="email"
                       component="input"
-                      type="text"
-                      placeholder="Last Name"
+                      type="email"
+                      placeholder="Email"
                     />
                   </div>
                 </div>
@@ -63,9 +69,12 @@ class SignUp extends Component {
                     name="password"
                     type="password"
                     component="input"
-                    placeholder="password"
+                    placeholder="Password"
                   />
                 </div>
+                  {message && (
+                      <Alert message={message} messageType={messageType} />
+                  )}
                 <div>
                   <button
                     className="ui primary basic button "
@@ -94,11 +103,14 @@ class SignUp extends Component {
 
 SignUp.propTypes = {
   firestore: PropTypes.object.isRequired,
-  setting: PropTypes.object.isRequired
+  notify: PropTypes.object.isRequired
 };
 export default compose(
-  firestoreConnect(),
-  connect((state, props) => ({
-    setting: state.setting
-  }))
+  firebaseConnect(),
+  connect(
+    (state, props) => ({
+      notify: state.notify
+    }),
+    { notifyUser }
+  )
 )(SignUp);
