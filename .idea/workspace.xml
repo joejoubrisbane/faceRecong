@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9163622-42e1-4a66-bcb3-4b7e7d042cd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/notifyAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Alert/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/notifyReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.03ad112d360a5c5cbf94f2478cfdcaeb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.89217228.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.89217228.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.b3d9b655.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.b3d9b655.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.58c11c8f.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.58c11c8f.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar/NavBarDesktop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar/NavBarDesktop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar/NavBarMoblie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar/NavBarMoblie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Landing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Landing/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/NavBarDesktop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="210">
               <caret line="24" column="30" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="30" />
               <folding>
                 <element signature="e#1#24#0" expanded="true" />
@@ -59,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/auth/Login/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
+            <state relative-caret-position="178">
+              <caret line="67" column="73" lean-forward="true" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="73" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -321,7 +301,8 @@
       <workItem from="1558842390882" duration="20444000" />
       <workItem from="1558868071051" duration="6520000" />
       <workItem from="1558918971177" duration="19933000" />
-      <workItem from="1558998886316" duration="21651000" />
+      <workItem from="1558998886316" duration="21835000" />
+      <workItem from="1559091907118" duration="1213000" />
     </task>
     <task id="LOCAL-00001" summary="add nav">
       <created>1558865074313</created>
@@ -334,13 +315,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79946000" />
+    <option name="totallyTimeSpent" value="81343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3286" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30363733" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30363733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -355,7 +336,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32916668" />
       <window_info anchor="bottom" id="Messages" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.17025863" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17025863" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -632,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/App/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/types.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -682,7 +656,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/NavBarDesktop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="210">
           <caret line="24" column="30" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="30" />
           <folding>
             <element signature="e#1#24#0" expanded="true" />
@@ -697,10 +671,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/App/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/auth/Login/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
+        <state relative-caret-position="178">
+          <caret line="67" column="73" lean-forward="true" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="73" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
