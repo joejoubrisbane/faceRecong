@@ -2,50 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9163622-42e1-4a66-bcb3-4b7e7d042cd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/robot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/css/2.714229b7.chunk.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/css/main.0c26f790.chunk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/css/main.0c26f790.chunk.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.f0800a4a.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/2.f0800a4a.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.cc736868.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/static/js/main.cc736868.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firestore.indexes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firestore.rules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/settingAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/auth/SignUp/SignUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/setting/Setting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/settingReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/errorHandle/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.b84e7a01b939b00bdf76e809b3666489.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/precache-manifest.999e57e08253df528d0cefa6123f889e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.e29e3a6d.chunk.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/css/2.714229b7.chunk.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.e29e3a6d.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.1ee65861.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.1ee65861.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.25ca7b8e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.25ca7b8e.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.65c16da6.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.65c16da6.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar/NavBarDesktop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar/NavBarDesktop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar/NavBarMoblie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar/NavBarMoblie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/CreateRobot/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CreateRobot/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/DisplayRobot/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/DisplayRobot/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/editRobot/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/editRobot/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Landing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Landing/index.js" afterDir="false" />
     </list>
     <list id="c21a70b3-fc2e-424a-a21b-f3a0d265ad5f" name="add picutre" comment="add picutre" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -60,42 +21,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/App/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/index.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/NavBarDesktop.js">
+        <entry file="file://$PROJECT_DIR$/src/components/errorHandle/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+            <state relative-caret-position="315">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/index.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1060">
-              <caret line="85" column="28" lean-forward="true" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+            <state relative-caret-position="462">
+              <caret line="46" column="3" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/Landing/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/auth/SignUp/SignUp.js">
+        <entry file="file://$PROJECT_DIR$/src/containers/DisplayRobot/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            <state relative-caret-position="-63">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,7 +123,6 @@
         <option value="$PROJECT_DIR$/src/containers/RobotDetails/index.js" />
         <option value="$PROJECT_DIR$/src/components/CardList/index.js" />
         <option value="$PROJECT_DIR$/src/reducers/notifyReducer.js" />
-        <option value="$PROJECT_DIR$/src/containers/Landing/index.js" />
         <option value="$PROJECT_DIR$/src/actions/notifyAction.js" />
         <option value="$PROJECT_DIR$/src/containers/App/App.css" />
         <option value="$PROJECT_DIR$/src/components/layout/Alert/index.js" />
@@ -184,6 +152,8 @@
         <option value="$PROJECT_DIR$/src/containers/editRobot/index.js" />
         <option value="$PROJECT_DIR$/src/containers/CreateRobot/index.js" />
         <option value="$PROJECT_DIR$/src/containers/App/App.js" />
+        <option value="$PROJECT_DIR$/src/containers/Landing/index.js" />
+        <option value="$PROJECT_DIR$/src/components/errorHandle/index.js" />
       </list>
     </option>
   </component>
@@ -244,14 +214,6 @@
               <item name="~/Documents/internship/RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="auth" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Login" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/internship/RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="Card" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -259,7 +221,29 @@
               <item name="~/Documents/internship/RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="CardList" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/internship/RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="errorHandle" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/internship/RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="layout" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/internship/RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="layout" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Alert" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -268,6 +252,27 @@
               <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="layout" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="NavBar" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/internship/RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Scroll" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/internship/RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="SearchBox" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/internship/RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="setting" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -325,7 +330,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/.bin/prettier" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -341,17 +346,17 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\RobotCard-react\public" />
+      <recent name="D:\RobotCard-react\src\components\layout\NavBar" />
+      <recent name="D:\RobotCard-react\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\RobotCard-react\src\components\auth" />
       <recent name="D:\RobotCard-react\src\components\auth\Login" />
       <recent name="D:\RobotCard-react\src\components\Card" />
       <recent name="D:\RobotCard-react\src\containers\DisplayRobot" />
       <recent name="D:\RobotCard-react\src\containers\App" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\RobotCard-react\public" />
-      <recent name="D:\RobotCard-react\src\components\layout\NavBar" />
-      <recent name="D:\RobotCard-react\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -425,11 +430,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559463458771</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="deploy">
+      <created>1560745127085</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560745127085</updated>
+    </task>
+    <task id="LOCAL-00007" summary="deploy">
+      <created>1560745141916</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560745141916</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117623000" />
+    <option name="totallyTimeSpent" value="118914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3286" y="0" width="1920" height="1080" extended-state="6" />
@@ -447,10 +466,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.8263889" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.36637932" />
       <window_info anchor="bottom" id="Messages" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.29305556" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.29202586" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -545,10 +564,10 @@
     <MESSAGE value="add registration" />
     <MESSAGE value="add build" />
     <MESSAGE value="modify store" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify store" />
+    <MESSAGE value="deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tep" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -584,16 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Landing/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/notifyAction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -614,16 +623,6 @@
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/DisplayRobot/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -683,9 +682,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/CreateRobot/index.css" />
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Card/index.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -743,9 +739,7 @@
     <entry file="file://$PROJECT_DIR$/firestore.rules">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock" />
     <entry file="file://$PROJECT_DIR$/src/components/SearchBox/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
@@ -834,20 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/Alert/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/App/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -886,6 +866,53 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/Alert/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/DisplayRobot/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Landing/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/errorHandle/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="46" column="3" lean-forward="true" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
         </state>
       </provider>
     </entry>
