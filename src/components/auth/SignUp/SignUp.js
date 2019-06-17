@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Responsive, Segment, Card, Placeholder } from "semantic-ui-react";
+import {
+  Responsive,
+  Segment,
+  Card,
+  Placeholder,
+  Image
+} from "semantic-ui-react";
 import { Form, Field } from "react-final-form";
 import { firestoreConnect } from "react-redux-firebase";
 import { Slider } from "react-semantic-ui-range";
@@ -19,7 +25,7 @@ class SignUp extends Component {
       .catch(err => notifyUser("That email already exits", "error"));
   };
   render() {
-      const { message, messageType } = this.props.notify;
+    const { message, messageType } = this.props.notify;
     return (
       <Responsive>
         <Segment>
@@ -32,10 +38,17 @@ class SignUp extends Component {
                   <div className="six wide field">
                     <Card fluid>
                       <Card.Header>
-                        <label>Register</label>
+                        <label>Let's start! </label>
                       </Card.Header>
+                      <Image
+                        alt="robots"
+                        src={`https://robohash.org/2?set=set5&bgset=bg1&size=300x300`}
+                        wrapped
+                        ui={false}
+                      />
                     </Card>
                   </div>
+
                   <div className=" ten wide field">
                     <label>First Name</label>
                     <Field
@@ -72,9 +85,9 @@ class SignUp extends Component {
                     placeholder="Password"
                   />
                 </div>
-                  {message && (
-                      <Alert message={message} messageType={messageType} />
-                  )}
+                {message && (
+                  <Alert message={message} messageType={messageType} />
+                )}
                 <div>
                   <button
                     className="ui primary basic button "
@@ -102,7 +115,6 @@ class SignUp extends Component {
 }
 
 SignUp.propTypes = {
-
   notify: PropTypes.object.isRequired
 };
 export default compose(
