@@ -1,68 +1,79 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Responsive, Segment ,Card, Placeholder } from "semantic-ui-react";
-import { Form, Field, } from "react-final-form";
-import {firestoreConnect} from "react-redux-firebase";
-import { Slider } from 'react-semantic-ui-range'
-class CreateRobot extends Component {
+import { Responsive, Segment, Card, Placeholder } from "semantic-ui-react";
+import { Form, Field } from "react-final-form";
+import { firestoreConnect } from "react-redux-firebase";
+import { Slider } from "react-semantic-ui-range";
+import { connect } from "react-redux";
+import { compose } from "redux";
 
-    onSubmit = values => {
-        const newRobot = values;
-        const { firestore,history } =this.props;
-        firestore.add({collection:'clients'},newRobot).then(history.push('/viewRobots'));
-    };
+class CreateRobot extends Component {
+  onSubmit = values => {
+    const newRobot = values;
+    const { firestore, history } = this.props;
+    firestore
+      .add({ collection: "clients" }, newRobot)
+      .then(history.push("/viewRobots"))
+      .catch(err => console.log(err));
+  };
   render() {
+      const {disableRobotsOnAdd} = this.props.setting;
     return (
       <Responsive>
         <Segment>
-
           <Form
             onSubmit={this.onSubmit}
             initialValues={{}}
             render={({ handleSubmit, form, submitting, pristine, values }) => (
               <form className="ui form" onSubmit={handleSubmit}>
                 <div className="fields">
-                    <div className="six wide field">
-                        <Card fluid>
-                            <Card.Header>
-                                <label>Robot image</label>
-                            </Card.Header>
-                            <Card.Content>
-
-                                    {
-                                        values.robotId ==undefined ?<Placeholder fluid> <Placeholder.Image rectangular /> </Placeholder>:<img alt='robots' src={`https://robohash.org/${values.robotId}?200*200`}/>
-                                    }
-
-
-
-                            </Card.Content>
-                        </Card>
-                    </div>
+                  <div className="six wide field">
+                    <Card fluid>
+                      <Card.Header>
+                        <label>Robot image</label>
+                      </Card.Header>
+                      <Card.Content>
+                        {values.robotId == undefined ? (
+                          <Placeholder fluid>
+                            {" "}
+                            <Placeholder.Image rectangular />{" "}
+                          </Placeholder>
+                        ) : (
+                          <img
+                            alt="robots"
+                            src={`https://robohash.org/${
+                              values.robotId
+                            }?bgset=bg1&size=300x300`}
+                          />
+                        )}
+                      </Card.Content>
+                    </Card>
+                  </div>
                   <div className=" ten wide field">
-                      <label>Angriness</label>
+                    <label>Angriness</label>
 
-                      <Field name="robotId" >
-                          {({ input, meta }) =>(
-
-                                  <Slider
-                                          {...input}
-
-                                          color="red"
-                                          settings={{
-                                              start: 2,
-                                              min: 0,
-                                              max: 100,
-                                              step: 1,
-                                              onChange:value =>{ input.onChange(value)}
-                                          }}
-                                  />
-
-
-                          ) }
-                      </Field>
+                    <Field name="robotId">
+                      {({ input, meta }) => (
+                        <Slider
+                            disabled={disableRobotsOnAdd}
+                          {...input}
+                          color="red"
+                          settings={{
+                            start: 2,
+                            min: 0,
+                            max: 100,
+                            step: 1,
+                            onChange: value => {
+                              input.onChange(value);
+                            }
+                          }}
+                        />
+                      )}
+                    </Field>
 
                     <label>First Name</label>
                     <Field
+                        disabled={disableRobotsOnAdd}
                       name="firstName"
                       component="input"
                       type="text"
@@ -71,23 +82,23 @@ class CreateRobot extends Component {
 
                     <label>Last Name</label>
                     <Field
+                        disabled={disableRobotsOnAdd}
                       name="lastName"
                       component="input"
                       type="text"
                       placeholder="Last Name"
                     />
 
-                      <label>Email</label>
-                      <Field
-                          name="email"
-                          component="input"
-                          type="text"
-                          placeholder="Last Name"
-                      />
+                    <label>Email</label>
+                    <Field
+                        disabled={disableRobotsOnAdd}
+                      name="email"
+                      component="input"
+                      type="text"
+                      placeholder="Last Name"
+                    />
                   </div>
                 </div>
-
-
 
                 <div className="field">
                   <label>Notes</label>
@@ -97,14 +108,18 @@ class CreateRobot extends Component {
                     placeholder="Notes"
                   />
                 </div>
-                <div >
-                  <button className='ui primary basic button ' type="submit" disabled={submitting || pristine}>
+                <div>
+                  <button
+                    className="ui primary basic button "
+                    type="submit"
+                    disabled={submitting || pristine|| disableRobotsOnAdd}
+                  >
                     Submit
                   </button>
                   <button
-                      className='ui secondary basic button'
+                    className="ui secondary basic button"
                     onClick={form.reset}
-                    disabled={submitting || pristine}
+                    disabled={submitting || pristine||disableRobotsOnAdd}
                   >
                     Reset
                   </button>
@@ -120,7 +135,10 @@ class CreateRobot extends Component {
 }
 
 CreateRobot.propTypes = {
-    firestore:PropTypes.object.isRequired,
+  firestore: PropTypes.object.isRequired,
+    setting:PropTypes.object.isRequired,
 };
 
-export default firestoreConnect()(CreateRobot) ;
+export default compose(firestoreConnect(),connect((state,props)=>({
+    setting:state.setting,
+})))(CreateRobot);

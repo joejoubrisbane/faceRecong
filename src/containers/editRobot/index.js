@@ -16,7 +16,9 @@ class editRobot extends Component {
     onSubmit = values => {
         const updatedRobot = values;
         const { firestore, client, history } =this.props;
-        firestore.update({collection:'clients',doc:client.id},updatedRobot).then(history.push('/viewRobots'));
+        firestore.update({collection:'clients',doc:client.id},updatedRobot)
+            .then(history.push('/viewRobots'))
+            .catch(err=>console.log(err))
     };
 
     render() {
@@ -45,7 +47,7 @@ class editRobot extends Component {
                                                 </Card.Header>
                                                 <Card.Content>
                                                     {
-                                                        values.robotId ==undefined ?<Placeholder fluid> <Placeholder.Image rectangular /> </Placeholder>:<img alt='robots' src={`https://robohash.org/${values.robotId}?200*200`}/>
+                                                        values.robotId ==undefined ?<Placeholder fluid> <Placeholder.Image rectangular /> </Placeholder>:<img alt='robots' src={`https://robohash.org/${values.robotId}?bgset=bg1&size=300x300`}/>
                                                     }
 
                                                 </Card.Content>
