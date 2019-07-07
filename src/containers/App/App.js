@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Helmet } from "react-helmet";
 import "./App.css";
 import store from "../../store";
 import { Provider } from "react-redux";

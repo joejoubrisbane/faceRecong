@@ -209,21 +209,13 @@ class Landing extends Component {
           <div className="container">
             <ul className="list-unstyled text-center clearfix">
               <li className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown">
-                <img
-                  src="../../../public/img/google_logo.png"
-                  alt=""
-                  title=""
-                />
+                <img src="img/google_logo.png" alt="" title="" />
               </li>
               <li
                 className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown"
                 data-wow-delay=".2s"
               >
-                <img
-                  src="../../../public/img/facebook_logo.png"
-                  alt=""
-                  title=""
-                />
+                <img src="img/facebook_logo.png" alt="" title="" />
               </li>
               <li
                 className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown"
@@ -305,7 +297,7 @@ class Landing extends Component {
                 className="col-sm-4 col-md-4 details animated wow fadeInDown"
                 data-wow-delay="0s"
               >
-                <img src="../../../public/img/f_icon1.png" alt="" title="" />
+                <img src="img/f_icon1.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
                   vel ultrices mauris libero id diam. Vivamus tellus sagittis
@@ -316,7 +308,7 @@ class Landing extends Component {
                 className="col-sm-4 col-md-4 details animated wow fadeInDown"
                 data-wow-delay=".1s"
               >
-                <img src="../../../public/img/f_icon2.png" alt="" title="" />
+                <img src="img/f_icon2.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
                   vel ultrices mauris libero id diam. Vivamus tellus sagittis
@@ -327,7 +319,7 @@ class Landing extends Component {
                 className="col-sm-4 col-md-4 details animated wow fadeInDown"
                 data-wow-delay=".2s"
               >
-                <img src="../../../public/img/f_icon3.png" alt="" title="" />
+                <img src="img/f_icon3.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
                   vel ultrices mauris libero id diam. Vivamus tellus sagittis
@@ -340,7 +332,7 @@ class Landing extends Component {
                 className="col-sm-4 col-md-4 details animated wow fadeInDown"
                 data-wow-delay="0s"
               >
-                <img src="../../../public/img/f_icon4.png" alt="" title="" />
+                <img src="img/f_icon4.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
                   vel ultrices mauris libero id diam. Vivamus tellus sagittis
@@ -351,7 +343,7 @@ class Landing extends Component {
                 className="col-sm-4 col-md-4 details animated wow fadeInDown"
                 data-wow-delay=".1s"
               >
-                <img src="../../../public/img/f_icon5.png" alt="" title="" />
+                <img src="img/f_icon5.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
                   vel ultrices mauris libero id diam. Vivamus tellus sagittis
@@ -362,7 +354,7 @@ class Landing extends Component {
                 className="col-sm-4 col-md-4 details animated wow fadeInDown"
                 data-wow-delay=".2s"
               >
-                <img src="../../../public/img/f_icon6.png" alt="" title="" />
+                <img src="img/f_icon6.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
                   vel ultrices mauris libero id diam. Vivamus tellus sagittis
