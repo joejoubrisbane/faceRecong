@@ -38,7 +38,7 @@ class App extends Component {
             <NavBar>
               <ErrorHandler>
                 <Switch>
-                  <Redirect from="/" to="/home" />
+                  <Redirect exact from="/" to="/home" />
                   <Route exact path="/home" component={Landing} />
                   <Route
                     exact
