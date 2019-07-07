@@ -4,7 +4,12 @@ import store from "../../store";
 import { Provider } from "react-redux";
 import CreateRobot from "../CreateRobot";
 import DisplayRobot from "../DisplayRobot/index";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 import NavBar from "../../components/layout/NavBar/index";
 import Landing from "../Landing";
 import editRobot from "../editRobot";
@@ -33,6 +38,7 @@ class App extends Component {
             <NavBar>
               <ErrorHandler>
                 <Switch>
+                  <Redirect from="/" to="/home" />
                   <Route exact path="/home" component={Landing} />
                   <Route
                     exact
