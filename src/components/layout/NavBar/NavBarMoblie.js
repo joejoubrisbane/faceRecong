@@ -1,5 +1,5 @@
 import _ from "lodash";
-import React, { Component,Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import { render } from "react-dom";
 import { NavLink } from "react-router-dom";
 import robot from "./robot.png";
@@ -16,7 +16,6 @@ import "./NavBar.css";
 import Setting from "../../setting/Setting";
 
 export const NavBarMobile = ({
-
   children,
   isLogin,
   onPusherClick,
@@ -44,37 +43,38 @@ export const NavBarMobile = ({
         View Robots
       </Menu.Item>
       {isLogin ? (
-          <Fragment>
-              <Menu.Item
-                  onClick={() => {
-                      onToggle();
-                  }}
-                  to="/setting"
-                  as={NavLink}
-              >
-                Setting
-              </Menu.Item>
+        <Fragment>
+          <Menu.Item
+            onClick={() => {
+              onToggle();
+            }}
+            to="/setting"
+            as={NavLink}
+          >
+            Setting
+          </Menu.Item>
 
-        <Menu.Item
-          onClick={() => {
-            onLogoutClick();
-            onToggle();
-          }}
-          to="/home"
-          as={NavLink}
-        >
-          Log out
-        </Menu.Item>
-          </Fragment>
+          <Menu.Item
+            onClick={() => {
+              onLogoutClick();
+              onToggle();
+            }}
+            to="/home"
+            as={NavLink}
+          >
+            Log out
+          </Menu.Item>
+        </Fragment>
       ) : (
-        <Menu.Item onClick={onToggle} to="/login" as={NavLink}>
-          Login
-        </Menu.Item>
+        <div>
+          <Menu.Item onClick={onToggle} to="/login" as={NavLink}>
+            Login
+          </Menu.Item>
+          <Menu.Item onClick={onToggle} to="/signUp" as={NavLink}>
+            Sign up
+          </Menu.Item>
+        </div>
       )}
-
-      <Menu.Item onClick={onToggle} to="/signUp" as={NavLink}>
-        Sign up
-      </Menu.Item>
     </Sidebar>
     <Sidebar.Pusher
       dimmed={visible}

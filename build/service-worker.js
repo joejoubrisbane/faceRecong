@@ -11,10 +11,12 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts(
+  "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js"
+);
 
 importScripts(
-  "/RobotCard-react/precache-manifest.999e57e08253df528d0cefa6123f889e.js"
+  "/RobotCard-react/precache-manifest.4d177219ca57fdfbdc89158a5d322262.js"
 );
 
 workbox.clientsClaim();
@@ -29,6 +31,5 @@ workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("/RobotCard-react/index.html", {
-  
-  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
+  blacklist: [/^\/_/, /\/[^\/]+\.[^\/]+$/]
 });

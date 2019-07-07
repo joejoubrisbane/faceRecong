@@ -1,4 +1,10 @@
 import React, { Component } from "react";
+import $ from "jquery";
+
+import WOW from "wowjs";
+import "jquery-parallax";
+import "nicescroll";
+import "jquery.scrollto";
 import PropTypes from "prop-types";
 // import '../../../public/css/animate.css'
 // import '../../../public/css/bootstrap.css'
@@ -10,13 +16,126 @@ import PropTypes from "prop-types";
 
 class Landing extends Component {
   render() {
+    // const $ = Window.$;
+    $(document).ready(function() {
+      //Navigation menu scrollTo
+      $("header nav ul li a").click(function(event) {
+        event.preventDefault();
+        var section = $(this).attr("href");
+        var section_pos = $(section).position();
+
+        if (section_pos) {
+          $(window).scrollTo({ top: section_pos.top, left: "0px" }, 1000);
+        }
+      });
+
+      $(".app_link").click(function(e) {
+        e.preventDefault();
+        $(window).scrollTo(
+          { top: $("#hero").position().top, left: "0px" },
+          1000
+        );
+      });
+
+      //Show & Hide menu on mobile
+      $(".burger_icon").click(function() {
+        $("header nav").toggleClass("show");
+        $("header .burger_icon").toggleClass("active");
+      });
+
+      //wow.js on scroll animations initialization
+      const wow = new WOW({
+        animateClass: "animated",
+        mobile: false,
+        offset: 50
+      });
+      wow.init();
+
+      //parallax effect initialization
+      console.log($(".hero"));
+      $(".hero").parallax("50%", 0.3);
+
+      //Nice scroll initialization
+      $("html").niceScroll({
+        scrollspeed: 50,
+        autohidemode: false,
+        cursorwidth: 8,
+        cursorborderradius: 8,
+        cursorborder: "0",
+        background: "rgba(48, 48, 48, .4)",
+        cursorcolor: "#1f1f1f",
+        zindex: 999
+      });
+
+      //Mailchimp subscription form initialization
+      $("#submit_form").submit(function() {
+        $("#mc_submit").attr("disabled", "disabled");
+        processing("icon", "loading");
+      });
+
+      if ($("#submit_form").length) {
+        //Mailchim Subscription form
+        $("#submit_form").ajaxChimp({
+          callback: chimpResponce
+        });
+      }
+
+      //Mail chimp callback function
+      function chimpResponce(resp) {
+        if (resp.result === "success") {
+          processing("loading", "icon");
+          $("#mc_submit").removeAttr("disabled", "disabled");
+          $("#submit_form #mc-email").val("");
+          $("#error_msg").hide();
+          $("#success_msg").show();
+        } else {
+          processing("loading", "icon");
+          $("#success_msg").hide();
+          $("#error_msg").show();
+          $("#mc_submit").removeAttr("disabled", "disabled");
+        }
+      }
+
+      function processing(hide, show) {
+        $("#mc_submit i")
+          .removeClass(hide)
+          .addClass(show);
+      }
+
+      //Popup video
+      $("#play_video").click(function(e) {
+        e.preventDefault();
+
+        var video_link = $(this).data("video");
+        video_link =
+          '<iframe src="' +
+          video_link +
+          '" width="500" height="208" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+
+        $(".about_video")
+          .append(video_link)
+          .fadeIn(200);
+      });
+
+      $(".close_video").click(function(e) {
+        e.preventDefault();
+
+        $(".about_video").fadeOut(200, function() {
+          $("iframe", this).remove();
+        });
+      });
+    });
     return (
       <div>
-
+        <img
+          src="./iphone.jpg"
+          style={{ width: "40px", display: "block", height: "40px" }}
+          alt=""
+        />
         <header>
           <div className="container">
             <div className="logo pull-left animated wow fadeInLeft">
-              <img className="logo-image" src="../../../public/img/logo.png" alt="" title="" />
+              <img className="logo-image" src="img/logo.png" alt="" title="" />
             </div>
 
             <nav className="pull-left">
@@ -37,17 +156,17 @@ class Landing extends Component {
               <ul className="list-unstyled">
                 <li className="animated wow fadeInRight" data-wow-delay=".2s">
                   <a href="#">
-                    <img src="../../../public/img/facebook.png" alt="" title="" />
+                    <img src="img/facebook.png" alt="" title="" />
                   </a>
                 </li>
                 <li className="animated wow fadeInRight" data-wow-delay=".1s">
                   <a href="#">
-                    <img src="../../../public/img/twitter.png" alt="" title="" />
+                    <img src="img/twitter.png" alt="" title="" />
                   </a>
                 </li>
                 <li className="animated wow fadeInRight" data-wow-delay="0s">
                   <a href="#">
-                    <img src="../../../public/img/google.png" alt="" title="" />
+                    <img src="img/google.png" alt="" title="" />
                   </a>
                 </li>
               </ul>
@@ -90,25 +209,33 @@ class Landing extends Component {
           <div className="container">
             <ul className="list-unstyled text-center clearfix">
               <li className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown">
-                <img src="../../../public/img/google_logo.png" alt="" title="" />
+                <img
+                  src="../../../public/img/google_logo.png"
+                  alt=""
+                  title=""
+                />
               </li>
               <li
                 className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown"
                 data-wow-delay=".2s"
               >
-                <img src="../../../public/img/facebook_logo.png" alt="" title="" />
+                <img
+                  src="../../../public/img/facebook_logo.png"
+                  alt=""
+                  title=""
+                />
               </li>
               <li
                 className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown"
                 data-wow-delay=".3s"
               >
-                <img src="../../../public/img/yahoo_logo.png" alt="" title="" />
+                <img src="img/yahoo_logo.png" alt="" title="" />
               </li>
               <li
                 className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown"
                 data-wow-delay=".4s"
               >
-                <img src="../../../public/img/paypal_logo.png" alt="" title="" />
+                <img src="img/paypal_logo.png" alt="" title="" />
               </li>
             </ul>
           </div>
@@ -119,7 +246,7 @@ class Landing extends Component {
             <div className="row">
               <div className="col-md-6 text-center animated wow fadeInLeft">
                 <div className="iphone">
-                  <img src="../../../public/img/iphone.png" alt="" titl="" />
+                  <img src="img/iphone.png" alt="" titl="" />
                 </div>
               </div>
               <div className="col-md-6 animated wow fadeInRight">
@@ -341,17 +468,17 @@ class Landing extends Component {
           <ul className="list-unstyled list-inline app_platform">
             <li className="animated wow fadeInDown" data-wow-delay="0s">
               <a href="">
-                <img src="../../../public/img/android_icon.png" alt="" title="" />
+                <img src="img/android_icon.png" alt="" title="" />
               </a>
             </li>
             <li className="animated wow fadeInDown" data-wow-delay=".1s">
               <a href="">
-                <img src="../../../public/img/ios_icon.png" alt="" title="" />
+                <img src="img/ios_icon.png" alt="" title="" />
               </a>
             </li>
             <li className="animated wow fadeInDown" data-wow-delay=".2s">
               <a href="">
-                <img src="../../../public/img/windows_icon.png" alt="" title="" />
+                <img src="img/windows_icon.png" alt="" title="" />
               </a>
             </li>
           </ul>

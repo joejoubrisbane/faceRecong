@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import "./App.css";
 import store from "../../store";
 import { Provider } from "react-redux";
@@ -11,10 +12,12 @@ import editRobot from "../editRobot";
 import Login from "../../components/auth/Login/Login";
 import Setting from "../../components/setting/Setting";
 import SignUp from "../../components/auth/SignUp/SignUp";
+import ErrorHandler from "../../components/errorHandle";
 import {
   UserIsAuthenticated,
   UserIsNotAuthenticated
 } from "../../helpers/auth";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -29,39 +32,37 @@ class App extends Component {
         <Router>
           <div className="tc">
             <NavBar>
-              <Switch>
-                <Route
-                  exact
-                  path="/home"
-                  component={Landing}
-                />
-                <Route
-                  exact
-                  path="/createRobot"
-                  component={UserIsAuthenticated(CreateRobot)}
-                />
-                <Route
-                  exact
-                  path="/viewRobots"
-                  component={UserIsAuthenticated(DisplayRobot)}
-                />
-                <Route
-                  exact
-                  path="/robot/edit/:id"
-                  component={UserIsAuthenticated(editRobot)}
-                />
-                <Route
-                  exact
-                  path="/login"
-                  component={UserIsNotAuthenticated(Login)}
-                />
-                <Route exact path="/signUp" component={SignUp} />
-                <Route
+              <ErrorHandler>
+                <Switch>
+                  <Route exact path="/home" component={Landing} />
+                  <Route
                     exact
-                    path="/setting"
-                    component={Setting}
-                />
-              </Switch>
+                    path="/createRobot"
+                    component={UserIsAuthenticated(CreateRobot)}
+                  />
+                  <Route
+                    exact
+                    path="/viewRobots"
+                    component={UserIsAuthenticated(DisplayRobot)}
+                  />
+                  <Route
+                    exact
+                    path="/robot/edit/:id"
+                    component={UserIsAuthenticated(editRobot)}
+                  />
+                  <Route
+                    exact
+                    path="/login"
+                    component={UserIsNotAuthenticated(Login)}
+                  />
+                  <Route
+                    exact
+                    path="/signUp"
+                    component={UserIsNotAuthenticated(SignUp)}
+                  />
+                  <Route exact path="/setting" component={Setting} />
+                </Switch>
+              </ErrorHandler>
             </NavBar>
           </div>
         </Router>

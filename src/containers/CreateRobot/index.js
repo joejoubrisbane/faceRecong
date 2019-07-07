@@ -17,7 +17,7 @@ class CreateRobot extends Component {
       .catch(err => console.log(err));
   };
   render() {
-      const {disableRobotsOnAdd} = this.props.setting;
+    const { disableRobotsOnAdd } = this.props.setting;
     return (
       <Responsive>
         <Segment>
@@ -41,9 +41,7 @@ class CreateRobot extends Component {
                         ) : (
                           <img
                             alt="robots"
-                            src={`https://robohash.org/${
-                              values.robotId
-                            }?200*200`}
+                            src={`https://robohash.org/${values.robotId}?bgset=bg1&size=300x300`}
                           />
                         )}
                       </Card.Content>
@@ -55,7 +53,7 @@ class CreateRobot extends Component {
                     <Field name="robotId">
                       {({ input, meta }) => (
                         <Slider
-                            disabled={disableRobotsOnAdd}
+                          disabled={disableRobotsOnAdd}
                           {...input}
                           color="red"
                           settings={{
@@ -73,7 +71,7 @@ class CreateRobot extends Component {
 
                     <label>First Name</label>
                     <Field
-                        disabled={disableRobotsOnAdd}
+                      disabled={disableRobotsOnAdd}
                       name="firstName"
                       component="input"
                       type="text"
@@ -82,7 +80,7 @@ class CreateRobot extends Component {
 
                     <label>Last Name</label>
                     <Field
-                        disabled={disableRobotsOnAdd}
+                      disabled={disableRobotsOnAdd}
                       name="lastName"
                       component="input"
                       type="text"
@@ -91,7 +89,7 @@ class CreateRobot extends Component {
 
                     <label>Email</label>
                     <Field
-                        disabled={disableRobotsOnAdd}
+                      disabled={disableRobotsOnAdd}
                       name="email"
                       component="input"
                       type="text"
@@ -112,14 +110,14 @@ class CreateRobot extends Component {
                   <button
                     className="ui primary basic button "
                     type="submit"
-                    disabled={submitting || pristine|| disableRobotsOnAdd}
+                    disabled={submitting || pristine || disableRobotsOnAdd}
                   >
                     Submit
                   </button>
                   <button
                     className="ui secondary basic button"
                     onClick={form.reset}
-                    disabled={submitting || pristine||disableRobotsOnAdd}
+                    disabled={submitting || pristine || disableRobotsOnAdd}
                   >
                     Reset
                   </button>
@@ -136,9 +134,12 @@ class CreateRobot extends Component {
 
 CreateRobot.propTypes = {
   firestore: PropTypes.object.isRequired,
-    setting:PropTypes.object.isRequired,
+  setting: PropTypes.object.isRequired
 };
 
-export default compose(firestoreConnect(),connect((state,props)=>({
-    setting:state.setting,
-})))(CreateRobot);
+export default compose(
+  firestoreConnect(),
+  connect((state, props) => ({
+    setting: state.setting
+  }))
+)(CreateRobot);

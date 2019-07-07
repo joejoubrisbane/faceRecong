@@ -1,5 +1,5 @@
 import _ from "lodash";
-import React, { Component,Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import { render } from "react-dom";
 import robot from "./robot.png";
 
@@ -42,37 +42,37 @@ const NavBarDesktop = ({ onLogoutClick, isLogin }) => (
         View Robots
       </NavLink>
       {isLogin ? (
-          <Fragment>
-              <NavLink
-                  className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
-
-                  to="/setting"
-              >
-                  Setting
-              </NavLink>
-        <NavLink
-          className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
-          onClick={onLogoutClick}
-          to="/home"
-        >
-          Log out
-        </NavLink>
-          </Fragment>
+        <Fragment>
+          <NavLink
+            className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
+            to="/setting"
+          >
+            Setting
+          </NavLink>
+          <NavLink
+            className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
+            onClick={onLogoutClick}
+            to="/home"
+          >
+            Log out
+          </NavLink>
+        </Fragment>
       ) : (
-        <NavLink
-          className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
-          to="/login"
-        >
-          Login
-        </NavLink>
+        <div>
+          <NavLink
+            className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l"
+            to="/login"
+          >
+            Login
+          </NavLink>
+          <NavLink
+            className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l "
+            to="/signUp"
+          >
+            Sign up
+          </NavLink>
+        </div>
       )}
-
-      <NavLink
-        className="f6 f5-l link bg-animate  hover-bg-light-green dib pa3 ph4-l "
-        to="/signUp"
-      >
-        Sign up
-      </NavLink>
     </Menu.Menu>
   </Menu>
 );
