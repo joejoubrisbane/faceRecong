@@ -1,141 +1,23 @@
 import React, { Component } from "react";
-import $ from "jquery";
-
-import WOW from "wowjs";
-import "jquery-parallax";
-import "nicescroll";
-import "jquery.scrollto";
+import LightSpeed from "react-reveal/LightSpeed";
+import Fade from "react-reveal/Fade";
 import PropTypes from "prop-types";
-// import '../../../public/css/animate.css'
-// import '../../../public/css/bootstrap.css'
-// import '../../../public/css/main.css'
-// import '../../../public/css/owl.carousel.css'
-// import '../../../public/css/owl.theme.css'
-// import '../../../public/css/owl.transitions.css'
-// import '../../../public/css/reset.css'
 
 class Landing extends Component {
   render() {
-    // const $ = Window.$;
-    $(document).ready(function() {
-      //Navigation menu scrollTo
-      $("header nav ul li a").click(function(event) {
-        event.preventDefault();
-        var section = $(this).attr("href");
-        var section_pos = $(section).position();
-
-        if (section_pos) {
-          $(window).scrollTo({ top: section_pos.top, left: "0px" }, 1000);
-        }
-      });
-
-      $(".app_link").click(function(e) {
-        e.preventDefault();
-        $(window).scrollTo(
-          { top: $("#hero").position().top, left: "0px" },
-          1000
-        );
-      });
-
-      //Show & Hide menu on mobile
-      $(".burger_icon").click(function() {
-        $("header nav").toggleClass("show");
-        $("header .burger_icon").toggleClass("active");
-      });
-
-      //wow.js on scroll animations initialization
-      const wow = new WOW({
-        animateClass: "animated",
-        mobile: false,
-        offset: 50
-      });
-      wow.init();
-
-      //parallax effect initialization
-      console.log($(".hero"));
-      $(".hero").parallax("50%", 0.3);
-
-      //Nice scroll initialization
-      $("html").niceScroll({
-        scrollspeed: 50,
-        autohidemode: false,
-        cursorwidth: 8,
-        cursorborderradius: 8,
-        cursorborder: "0",
-        background: "rgba(48, 48, 48, .4)",
-        cursorcolor: "#1f1f1f",
-        zindex: 999
-      });
-
-      //Mailchimp subscription form initialization
-      $("#submit_form").submit(function() {
-        $("#mc_submit").attr("disabled", "disabled");
-        processing("icon", "loading");
-      });
-
-      if ($("#submit_form").length) {
-        //Mailchim Subscription form
-        $("#submit_form").ajaxChimp({
-          callback: chimpResponce
-        });
-      }
-
-      //Mail chimp callback function
-      function chimpResponce(resp) {
-        if (resp.result === "success") {
-          processing("loading", "icon");
-          $("#mc_submit").removeAttr("disabled", "disabled");
-          $("#submit_form #mc-email").val("");
-          $("#error_msg").hide();
-          $("#success_msg").show();
-        } else {
-          processing("loading", "icon");
-          $("#success_msg").hide();
-          $("#error_msg").show();
-          $("#mc_submit").removeAttr("disabled", "disabled");
-        }
-      }
-
-      function processing(hide, show) {
-        $("#mc_submit i")
-          .removeClass(hide)
-          .addClass(show);
-      }
-
-      //Popup video
-      $("#play_video").click(function(e) {
-        e.preventDefault();
-
-        var video_link = $(this).data("video");
-        video_link =
-          '<iframe src="' +
-          video_link +
-          '" width="500" height="208" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
-
-        $(".about_video")
-          .append(video_link)
-          .fadeIn(200);
-      });
-
-      $(".close_video").click(function(e) {
-        e.preventDefault();
-
-        $(".about_video").fadeOut(200, function() {
-          $("iframe", this).remove();
-        });
-      });
-    });
     return (
       <div>
         <section className="hero" id="hero">
           <div className="container">
             <div className="caption">
-              <h1 className="text-uppercase  animated wow fadeInLeft">
-                Creators of Robofriends and SmartBrain
-              </h1>
-              <p className="enhance text-lowercase  animated wow fadeInLeft">
-                Developers of the future, building for today
-              </p>
+              <Fade duration={3000} right>
+                <h1 className="text-uppercase   wow ">
+                  Creators of Robofriends and SmartBrain
+                </h1>
+                <p className="enhance text-lowercase  wow ">
+                  Developers of the future, building for today
+                </p>
+              </Fade>
 
               <a
                 href="https://github.com/aneagoie/robofriends"
@@ -188,9 +70,11 @@ class Landing extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-6 text-center animated wow fadeInLeft">
-                <div className="iphone">
-                  <img src="img/iphone.png" alt="" titl="" />
-                </div>
+                <Fade duration={2000} left>
+                  <div className="iphone">
+                    <img src="img/iphone.png" alt="" titl="" />
+                  </div>
+                </Fade>
               </div>
               <div className="col-md-6 animated wow fadeInRight">
                 <div className="features_list">
@@ -241,6 +125,7 @@ class Landing extends Component {
             <a href="" className="close_video" />
           </div>
         </section>
+
         <section className="app_features" id="app_features">
           <div className="container">
             <div className="row text-center">
@@ -323,58 +208,60 @@ class Landing extends Component {
         >
           <div className="container">
             <div className="testimonials_list">
-              <ul
-                className="list-unstyled text-center slides clearfix"
-                id="tslider"
-              >
-                <li>
-                  <blockquote>
-                    <p>
-                      Integer pharetra tellus varius, dictum erat vel, maximus
-                      tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec
-                      pulvinar vehicula donec congue tortor eget sem
-                      condimentum, ut tempor massa porttitor. Praesent tincidunt
-                      mi orci in sollicitudin mi dapibus dapibus pellentesque
-                      habitant morbi tristique senectus et malesuada fames
-                      turpis egestas.
-                    </p>
-                    <span className="author text-uppercase">John Doe</span>
-                    <span className="job">Full Stack developer</span>
-                  </blockquote>
-                </li>
+              <Fade left cascade duration={2000}>
+                <ul
+                  className="list-unstyled text-center slides clearfix"
+                  id="tslider"
+                >
+                  <li>
+                    <blockquote>
+                      <p>
+                        Integer pharetra tellus varius, dictum erat vel, maximus
+                        tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec
+                        pulvinar vehicula donec congue tortor eget sem
+                        condimentum, ut tempor massa porttitor. Praesent
+                        tincidunt mi orci in sollicitudin mi dapibus dapibus
+                        pellentesque habitant morbi tristique senectus et
+                        malesuada fames turpis egestas.
+                      </p>
+                      <span className="author text-uppercase">John Doe</span>
+                      <span className="job">Full Stack developer</span>
+                    </blockquote>
+                  </li>
 
-                <li>
-                  <blockquote>
-                    <p>
-                      Integer pharetra tellus varius, dictum erat vel, maximus
-                      tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec
-                      pulvinar vehicula donec congue tortor eget sem
-                      condimentum, ut tempor massa porttitor. Praesent tincidunt
-                      mi orci in sollicitudin mi dapibus dapibus pellentesque
-                      habitant morbi tristique senectus et malesuada fames
-                      turpis egestas.
-                    </p>
-                    <span className="author text-uppercase">Alex Fredy</span>
-                    <span className="job">Javascript developer</span>
-                  </blockquote>
-                </li>
+                  <li>
+                    <blockquote>
+                      <p>
+                        Integer pharetra tellus varius, dictum erat vel, maximus
+                        tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec
+                        pulvinar vehicula donec congue tortor eget sem
+                        condimentum, ut tempor massa porttitor. Praesent
+                        tincidunt mi orci in sollicitudin mi dapibus dapibus
+                        pellentesque habitant morbi tristique senectus et
+                        malesuada fames turpis egestas.
+                      </p>
+                      <span className="author text-uppercase">Alex Fredy</span>
+                      <span className="job">Javascript developer</span>
+                    </blockquote>
+                  </li>
 
-                <li>
-                  <blockquote>
-                    <p>
-                      Integer pharetra tellus varius, dictum erat vel, maximus
-                      tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec
-                      pulvinar vehicula donec congue tortor eget sem
-                      condimentum, ut tempor massa porttitor. Praesent tincidunt
-                      mi orci in sollicitudin mi dapibus dapibus pellentesque
-                      habitant morbi tristique senectus et malesuada fames
-                      turpis egestas.
-                    </p>
-                    <span className="author text-uppercase">Sara Aliba</span>
-                    <span className="job">Web Designer</span>
-                  </blockquote>
-                </li>
-              </ul>
+                  <li>
+                    <blockquote>
+                      <p>
+                        Integer pharetra tellus varius, dictum erat vel, maximus
+                        tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec
+                        pulvinar vehicula donec congue tortor eget sem
+                        condimentum, ut tempor massa porttitor. Praesent
+                        tincidunt mi orci in sollicitudin mi dapibus dapibus
+                        pellentesque habitant morbi tristique senectus et
+                        malesuada fames turpis egestas.
+                      </p>
+                      <span className="author text-uppercase">Sara Aliba</span>
+                      <span className="job">Web Designer</span>
+                    </blockquote>
+                  </li>
+                </ul>
+              </Fade>
               <div id="slider_nav">
                 <div id="prev_arrow" />
                 <div id="next_arrow" />
