@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import LightSpeed from "react-reveal/LightSpeed";
 import Fade from "react-reveal/Fade";
 import PropTypes from "prop-types";
+import { CustomDiv } from "./elements.";
 
 class Landing extends Component {
   render() {
     return (
-      <div>
+      <CustomDiv>
         <section className="hero" id="hero">
           <div className="container">
             <div className="caption">
@@ -41,25 +42,16 @@ class Landing extends Component {
         <section className="featured_on">
           <div className="container">
             <ul className="list-unstyled text-center clearfix">
-              <li className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown">
+              <li className="col-xs-6 col-sm-6 col-md-3 animated  fadeInDown">
                 <img src="img/google_logo.png" alt="" title="" />
               </li>
-              <li
-                className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown"
-                data-wow-delay=".2s"
-              >
+              <li className="col-xs-6 col-sm-6 col-md-3 animated  fadeInDown">
                 <img src="img/facebook_logo.png" alt="" title="" />
               </li>
-              <li
-                className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown"
-                data-wow-delay=".3s"
-              >
+              <li className="col-xs-6 col-sm-6 col-md-3 animated  fadeInDown">
                 <img src="img/yahoo_logo.png" alt="" title="" />
               </li>
-              <li
-                className="col-xs-6 col-sm-6 col-md-3 animated wow fadeInDown"
-                data-wow-delay=".4s"
-              >
+              <li className="col-xs-6 col-sm-6 col-md-3 animated  fadeInDown">
                 <img src="img/paypal_logo.png" alt="" title="" />
               </li>
             </ul>
@@ -69,14 +61,14 @@ class Landing extends Component {
         <section className="about" id="about">
           <div className="container">
             <div className="row">
-              <div className="col-md-6 text-center animated wow fadeInLeft">
+              <div className="col-md-6 text-center animated  fadeInLeft">
                 <Fade duration={2000} left>
                   <div className="iphone">
                     <img src="img/iphone.png" alt="" titl="" />
                   </div>
                 </Fade>
               </div>
-              <div className="col-md-6 animated wow fadeInRight">
+              <div className="col-md-6 animated  fadeInRight">
                 <div className="features_list">
                   <h1 className="text-uppercase">
                     The Greatest Products Ever Created
@@ -129,10 +121,7 @@ class Landing extends Component {
         <section className="app_features" id="app_features">
           <div className="container">
             <div className="row text-center">
-              <div
-                className="col-sm-4 col-md-4 details animated wow fadeInDown"
-                data-wow-delay="0s"
-              >
+              <div className="col-sm-4 col-md-4 details animated  fadeInDown">
                 <img src="img/f_icon1.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
@@ -140,10 +129,7 @@ class Landing extends Component {
                   facilisis nisi quis mollis risus quisque ultrices elit.
                 </p>
               </div>
-              <div
-                className="col-sm-4 col-md-4 details animated wow fadeInDown"
-                data-wow-delay=".1s"
-              >
+              <div className="col-sm-4 col-md-4 details animated  fadeInDown">
                 <img src="img/f_icon2.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
@@ -151,10 +137,7 @@ class Landing extends Component {
                   facilisis nisi quis mollis risus quisque ultrices elit.
                 </p>
               </div>
-              <div
-                className="col-sm-4 col-md-4 details animated wow fadeInDown"
-                data-wow-delay=".2s"
-              >
+              <div className="col-sm-4 col-md-4 details animated  fadeInDown">
                 <img src="img/f_icon3.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
@@ -164,10 +147,7 @@ class Landing extends Component {
               </div>
             </div>
             <div className="row text-center">
-              <div
-                className="col-sm-4 col-md-4 details animated wow fadeInDown"
-                data-wow-delay="0s"
-              >
+              <div className="col-sm-4 col-md-4 details animated  fadeInDown">
                 <img src="img/f_icon4.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
@@ -175,10 +155,7 @@ class Landing extends Component {
                   facilisis nisi quis mollis risus quisque ultrices elit.
                 </p>
               </div>
-              <div
-                className="col-sm-4 col-md-4 details animated wow fadeInDown"
-                data-wow-delay=".1s"
-              >
+              <div className="col-sm-4 col-md-4 details animated  fadeInDown">
                 <img src="img/f_icon5.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
@@ -186,10 +163,7 @@ class Landing extends Component {
                   facilisis nisi quis mollis risus quisque ultrices elit.
                 </p>
               </div>
-              <div
-                className="col-sm-4 col-md-4 details animated wow fadeInDown"
-                data-wow-delay=".2s"
-              >
+              <div className="col-sm-4 col-md-4 details animated  fadeInDown">
                 <img src="img/f_icon6.png" alt="" title="" />
                 <h1 className="text-uppercase">malesuada fames turpis.</h1>
                 <p className="text-lowercase">
@@ -201,14 +175,10 @@ class Landing extends Component {
           </div>
         </section>
 
-        <section
-          className="testimonials animated wow fadeIn"
-          id="testimonials"
-          data-wow-duration="2s"
-        >
+        <section className="testimonials animated  fadeIn" id="testimonials">
           <div className="container">
             <div className="testimonials_list">
-              <Fade left cascade duration={2000}>
+              <Fade left cascade duration={1000}>
                 <ul
                   className="list-unstyled text-center slides clearfix"
                   id="tslider"
@@ -271,14 +241,13 @@ class Landing extends Component {
         </section>
 
         <section className="sub_box">
-          <p className="cta_text animated wow fadeInDown">
+          <p className="cta_text animated  fadeInDown">
             We're hiring. Join Our company!
           </p>
           <form
             action="#"
             metohd="post"
-            className="animated wow fadeIn"
-            data-wow-duration="2s"
+            className="animated  fadeIn"
             id="submit_form"
           >
             <input type="email" id="mc-email" placeholder="Enter your email" />
@@ -296,27 +265,27 @@ class Landing extends Component {
 
         <footer>
           <ul className="list-unstyled list-inline app_platform">
-            <li className="animated wow fadeInDown" data-wow-delay="0s">
+            <li className="animated  fadeInDown">
               <a href="">
                 <img src="img/android_icon.png" alt="" title="" />
               </a>
             </li>
-            <li className="animated wow fadeInDown" data-wow-delay=".1s">
+            <li className="animated  fadeInDown">
               <a href="">
                 <img src="img/ios_icon.png" alt="" title="" />
               </a>
             </li>
-            <li className="animated wow fadeInDown" data-wow-delay=".2s">
+            <li className="animated  fadeInDown">
               <a href="">
                 <img src="img/windows_icon.png" alt="" title="" />
               </a>
             </li>
           </ul>
-          <p className="copyright animated wow fadeIn" data-wow-duration="2s">
+          <p className="copyright animated  fadeIn">
             <strong>Pixelhint</strong>
           </p>
         </footer>
-      </div>
+      </CustomDiv>
     );
   }
 }

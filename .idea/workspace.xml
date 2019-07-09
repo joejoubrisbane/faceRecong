@@ -2,39 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9163622-42e1-4a66-bcb3-4b7e7d042cd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/Landing/elements..js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/owl.carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/owl.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/owl.theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/owl.transitions.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/owl.transitions.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/ajaxchimp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/nicescroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/owl.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/parallax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/scrollTo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/wow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.7f835f0a0fede27113d18fea22022207.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.d65ccefb.chunk.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/css/2.d65ccefb.chunk.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.3b70b30c.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.3b70b30c.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.5667f389.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.5667f389.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.ff895ad1.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.ff895ad1.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime~main.e47c5e7b.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/runtime~main.e47c5e7b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.transitions.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/NavBar/NavBarChildren.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/NavBar/NavBarChildren.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Landing/elements..js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Landing/elements..js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Landing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Landing/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <list id="c21a70b3-fc2e-424a-a21b-f3a0d265ad5f" name="add picutre" comment="add picutre" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -48,13 +22,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Landing/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="210" column="24" selection-start-line="210" selection-start-column="24" selection-end-line="210" selection-end-column="24" />
+            <state relative-caret-position="9827">
+              <caret line="317" column="18" lean-forward="true" selection-start-line="317" selection-start-column="18" selection-end-line="317" selection-end-column="18" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/Landing/elements..js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,8 +49,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/App/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+            <state relative-caret-position="62">
+              <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1550">
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -73,10 +67,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/NavBar.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/NavBarChildren.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-191">
-              <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+            <state relative-caret-position="93">
+              <caret line="775" lean-forward="true" selection-start-line="775" selection-end-line="775" />
             </state>
           </provider>
         </entry>
@@ -114,12 +122,12 @@
       <find>style</find>
       <find>parallax</find>
       <find>hero</find>
-      <find>wow</find>
       <find>tslider</find>
       <find>Butt</find>
       <find>Button</find>
       <find>img</find>
       <find>contain</find>
+      <find>wow</find>
     </findStrings>
     <dirStrings>
       <dir>D:\RobotCard-react\src\reducers</dir>
@@ -144,7 +152,6 @@
         <option value="$PROJECT_DIR$/src/containers/DisplayRobot.js" />
         <option value="$PROJECT_DIR$/src/components/SearchBox/index.js" />
         <option value="$PROJECT_DIR$/src/components/Scroll/index.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/NavBar/NavBarChildren.js" />
         <option value="$PROJECT_DIR$/src/components/layout/NavBar/NavBar.css" />
         <option value="$PROJECT_DIR$/src/containers/Langing/index.js" />
         <option value="$PROJECT_DIR$/src/containers/RobotDetails/index.js" />
@@ -181,8 +188,9 @@
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/containers/App/App.js" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
-        <option value="$PROJECT_DIR$/src/containers/Landing/elements..js" />
         <option value="$PROJECT_DIR$/src/containers/Landing/index.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/NavBar/NavBarChildren.js" />
+        <option value="$PROJECT_DIR$/src/containers/Landing/elements..js" />
       </list>
     </option>
   </component>
@@ -202,7 +210,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -228,6 +236,12 @@
               <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="D:\RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\RobotCard-react" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="RobotCard-react" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -260,7 +274,43 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RobotCard-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotCard-react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotCard-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotCard-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotCard-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RobotCard-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotCard-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="NavBar" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,7 +388,7 @@
       <workItem from="1561241494189" duration="5043000" />
       <workItem from="1561292974093" duration="644000" />
       <workItem from="1562408093027" duration="15000" />
-      <workItem from="1562462004835" duration="21836000" />
+      <workItem from="1562462004835" duration="23412000" />
     </task>
     <task id="LOCAL-00001" summary="add nav">
       <created>1558865074313</created>
@@ -393,13 +443,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145489000" />
+    <option name="totallyTimeSpent" value="147065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13681428" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13681428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -414,7 +464,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4976867" weight="0.82916665" />
       <window_info anchor="bottom" id="Messages" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.0892267" side_tool="true" weight="0.13333334" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.9107733" visible="true" weight="0.3625" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.9107733" visible="true" weight="0.3625" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -512,29 +562,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="modify store" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/NavBarDesktop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/robot.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/NavBarMoblie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2038">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Scroll/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -711,16 +738,6 @@
         <state relative-caret-position="-470" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/App/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1240" />
@@ -730,13 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -754,22 +764,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Landing/elements..js">
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="93">
+          <caret line="775" lean-forward="true" selection-start-line="775" selection-end-line="775" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1550">
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/NavBar.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/NavBar/NavBarChildren.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Landing/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="210" column="24" selection-start-line="210" selection-start-column="24" selection-end-line="210" selection-end-column="24" />
+        <state relative-caret-position="9827">
+          <caret line="317" column="18" lean-forward="true" selection-start-line="317" selection-start-column="18" selection-end-line="317" selection-end-column="18" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Landing/elements..js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
