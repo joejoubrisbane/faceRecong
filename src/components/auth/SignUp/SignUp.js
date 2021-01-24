@@ -104,7 +104,6 @@ class SignUp extends Component {
                     Reset
                   </button>
                 </div>
-                <pre>{JSON.stringify(values, 0, 2)}</pre>
               </form>
             )}
           />

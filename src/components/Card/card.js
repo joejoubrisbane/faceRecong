@@ -52,11 +52,8 @@ const Card = ({
         />
         <Modal.Description>
           <Header>{name}</Header>
-          <p>
-            We've found the following gravatar image associated with your e-mail
-            address.
-          </p>
-          <p>Is it okay to use this photo?</p>
+          <p>Hello, Nice to meet you my master</p>
+          <p>What can I do for you?</p>
           <p>{notes}</p>
           <Link
             className={classNames("ui button  primary", {

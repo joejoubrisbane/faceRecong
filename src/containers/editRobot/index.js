@@ -136,7 +136,6 @@ class editRobot extends Component {
                       Reset
                     </button>
                   </div>
-                  <pre>{JSON.stringify(values, 0, 2)}</pre>
                 </form>
               )}
             />

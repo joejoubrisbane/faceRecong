@@ -41,9 +41,8 @@ class Login extends Component {
         >
           <Grid.Column style={{ maxWidth: 450 }}>
             <Segment raised stacked>
-              <Card fluid >
+              <Card fluid>
                 <Image
-
                   alt="robots"
                   src={`https://robohash.org/1?bgset=bg1&set=set3&size=392x392`}
                   wrapped
@@ -66,7 +65,6 @@ class Login extends Component {
                         onSubmit={handleSubmit}
                       >
                         <div className="  field">
-
                           <label>Email</label>
                           <Field
                             name="email"
@@ -114,7 +112,6 @@ class Login extends Component {
                         >
                           Login
                         </button>
-                        <pre>{JSON.stringify(values, 0, 2)}</pre>
                       </form>
                     )}
                   />
