@@ -16,7 +16,7 @@ importScripts(
 );
 
 importScripts(
-  "/RobotCard-react/precache-manifest.c9549435154c3a3d607754532e76a958.js"
+  "/RobotCard-react/precache-manifest.9e8f39bfd390143953ab1daf8cd0530b.js"
 );
 
 workbox.clientsClaim();
@@ -31,5 +31,5 @@ workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("/RobotCard-react/index.html", {
-  blacklist: [/^\/_/, /\/[^\/]+\.[^\/]+$/]
+  blacklist: [/^\/_/, /\/[^/]+\.[^/]+$/]
 });
