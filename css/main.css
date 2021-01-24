@@ -771,8 +771,14 @@ footer .copyright a {
   }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   /*		Header 		*/
+
+  .ui.container {
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
   header .logo {
     margin-right: 0;
   }
