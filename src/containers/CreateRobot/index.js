@@ -21,6 +21,9 @@ class CreateRobot extends Component {
     return (
       <Responsive>
         <Segment>
+          <h1>This is test</h1>
+        </Segment>
+        <Segment>
           <Form
             onSubmit={this.onSubmit}
             initialValues={{}}

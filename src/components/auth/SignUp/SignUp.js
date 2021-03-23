@@ -73,18 +73,17 @@ class SignUp extends Component {
                       type="email"
                       placeholder="Email"
                     />
+                    <label>Password</label>
+                    <Field
+                      name="password"
+                      type="password"
+                      component="input"
+                      placeholder="Password"
+                    />
                   </div>
                 </div>
 
-                <div className="field">
-                  <label>Password</label>
-                  <Field
-                    name="password"
-                    type="password"
-                    component="input"
-                    placeholder="Password"
-                  />
-                </div>
+                <div className="field"></div>
                 {message && (
                   <Alert message={message} messageType={messageType} />
                 )}
