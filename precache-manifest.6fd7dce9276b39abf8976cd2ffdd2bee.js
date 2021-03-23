@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b63187e252ad7675e37e",
+    "revision": "7daee3db080dcc68b2f5",
     "url": "/RobotCard-react/static/css/main.e8b95164.chunk.css"
   },
   {
-    "revision": "b63187e252ad7675e37e",
-    "url": "/RobotCard-react/static/js/main.b63187e2.chunk.js"
+    "revision": "7daee3db080dcc68b2f5",
+    "url": "/RobotCard-react/static/js/main.7daee3db.chunk.js"
   },
   {
     "revision": "e47c5e7b3ffade63a4e4",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/RobotCard-react/static/media/SEGA.12a3db8b.woff"
   },
   {
-    "revision": "8f25e278055a6be2f709810af04c022c",
+    "revision": "88f39b3c7941144784d046073310457f",
     "url": "/RobotCard-react/index.html"
   }
 ];
